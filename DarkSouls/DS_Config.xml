@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Players>
+		<Row>
+			<Domain>StandardPlayers</Domain>
+			<CivilizationType>CIVILIZATION_FIRELINK</CivilizationType>
+			<LeaderType>LEADER_FIREKEEPER</LeaderType>
+			<CivilizationName>LOC_CIVILIZATION_FIRELINK_NAME</CivilizationName>
+			<CivilizationIcon>ICON_CIVILIZATION_FIRELINK</CivilizationIcon>
+			<LeaderName>LOC_LEADER_FIREKEEPER_NAME</LeaderName>
+			<LeaderIcon>ICON_LEADER_FIREKEEPER</LeaderIcon>
+			<CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_CITY_DEFERENCE_NAME</CivilizationAbilityName>
+			<CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_CITY_DEFERENCE_DESCRIPTION</CivilizationAbilityDescription>
+			<CivilizationAbilityIcon>ICON_CIVILIZATION_FIRELINK</CivilizationAbilityIcon>
+			<LeaderAbilityName>LOC_TRAIT_LEADER_FIREKEEPER_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_TRAIT_LEADER_FIREKEEPER_DESCRIPTION</LeaderAbilityDescription>
+			<LeaderAbilityIcon>ICON_LEADER_FIREKEEPER</LeaderAbilityIcon>
+			<Portrait>LEADER_FIREKEEPER_NEUTRAL</Portrait>
+		</Row>
+	</Players>
+	<PlayerItems>
+		<Row>
+			<CivilizationType>CIVILIZATION_FIRELINK</CivilizationType>
+			<LeaderType>LEADER_FIREKEEPER</LeaderType>
+			<Type>DISTRICT_BONFIRE</Type>
+			<Name>LOC_DISTRICT_BONFIRE_NAME</Name>
+			<Description>LOC_TRAIT_CIVILIZATION_DISTRICT_BONFIRE_DESCRIPTION</Description>
+			<Icon>ICON_DISTRICT_BONFIRE</Icon>
+			<SortIndex>20</SortIndex>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_FIRELINK</CivilizationType>
+			<LeaderType>LEADER_FIREKEEPER</LeaderType>
+			<Type>UNIT_UNDEAD</Type>
+			<Name>LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_NAME</Name>
+			<Description>LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_DESCRIPTION</Description>
+			<Icon>ICON_UNIT_UNDEAD</Icon>
+			<SortIndex>10</SortIndex>
+		</Row>
+	</PlayerItems>
+</GameData>

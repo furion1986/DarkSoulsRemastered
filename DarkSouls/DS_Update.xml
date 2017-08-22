@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DS_Delete -->
+<!-- Author: Administrator -->
+<!-- DateCreated: 8/13/2017 1:32:39 PM -->
+<GameData>
+	<Policies>
+		<Update>
+			<Where PolicyType="POLICY_MILITARY_FIRST"/>
+			<Set PrereqCivic="CIVIC_COLD_WAR"/>
+		</Update>
+	</Policies>
+	<Units>
+		<Update>
+			<Where UnitType="UNIT_BOMBER"/>
+			<Set PrereqTech="TECH_ROCKETRY"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_FIGHTER"/>
+			<Set PrereqTech="TECH_ROCKETRY"/>
+		</Update>
+	</Units>
+	<!--<Improvement_Adjacencies>
+		<Delete YieldChangeId="Farms_MedievalAdjacency"/>
+	</Improvement_Adjacencies>-->
+	<ObsoletePolicies>
+		<Delete PolicyType="POLICY_DISCIPLINE"/>
+		<Delete PolicyType="POLICY_SURVEY"/>
+		<Delete PolicyType="POLICY_GOD_KING"/>
+		<Delete PolicyType="POLICY_URBAN_PLANNING"/>
+		<Delete PolicyType="POLICY_ILKUM"/>
+		<Delete PolicyType="POLICY_AGOGE"/>
+		<Delete PolicyType="POLICY_CARAVANSARIES"/>
+		<Delete PolicyType="POLICY_MARITIME_INDUSTRIES"/>
+		<Delete PolicyType="POLICY_MANEUVER"/>
+		<Delete PolicyType="POLICY_STRATEGOS"/>
+		<Delete PolicyType="POLICY_CORVEE"/>
+		<Delete PolicyType="POLICY_CONSCRIPTION"/>
+		<Delete PolicyType="POLICY_LAND_SURVEYORS"/>
+		<Delete PolicyType="POLICY_COLONIZATION"/>
+		<Delete PolicyType="POLICY_INSPIRATION"/>
+		<Delete PolicyType="POLICY_REVELATION"/>
+		<Delete PolicyType="POLICY_INSULAE"/>
+		<Delete PolicyType="POLICY_CHARISMATIC_LEADER"/>
+		<Delete PolicyType="POLICY_RAID"/>
+		<Delete PolicyType="POLICY_BASTIONS"/>
+		<Delete PolicyType="POLICY_LIMES"/>
+		<Delete PolicyType="POLICY_NATURAL_PHILOSOPHY"/>
+		<Delete PolicyType="POLICY_NAVAL_INFRASTRUCTURE"/>
+		<Delete PolicyType="POLICY_FEUDAL_CONTRACT"/>
+		<Delete PolicyType="POLICY_SERFDOM"/>
+		<Delete PolicyType="POLICY_RETAINERS"/>
+		<Delete PolicyType="POLICY_SACK"/>
+		<Delete PolicyType="POLICY_TRADE_CONFEDERATION"/>
+		<Delete PolicyType="POLICY_AESTHETICS"/>
+		<Delete PolicyType="POLICY_MEDINA_QUARTER"/>
+		<Delete PolicyType="POLICY_CRAFTSMEN"/>
+		<Delete PolicyType="POLICY_TOWN_CHARTERS"/>
+		<Delete PolicyType="POLICY_TRAVELING_MERCHANTS"/>
+		<Delete PolicyType="POLICY_GOTHIC_ARCHITECTURE"/>
+		<Delete PolicyType="POLICY_CHIVALRY"/>
+		<Delete PolicyType="POLICY_TRIANGULAR_TRADE"/>
+		<Delete PolicyType="POLICY_LIBERALISM"/>
+		<Delete PolicyType="POLICY_GRANDE_ARMEE"/>
+		<Delete PolicyType="POLICY_GRAND_OPERA"/>
+		<Delete PolicyType="POLICY_PRESS_GANGS"/>
+		<Delete PolicyType="POLICY_MILITARY_RESEARCH"/>
+		<Delete PolicyType="POLICY_FINEST_HOUR"/>
+	</ObsoletePolicies>
+</GameData>

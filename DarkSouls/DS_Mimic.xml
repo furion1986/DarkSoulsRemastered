@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DS_Mimic -->
+<!-- Author: Administrator -->
+<!-- DateCreated: 8/7/2017 2:42:38 AM -->
+<GameData>
+	<Types>
+		<Row Type="UNIT_MIMIC" Kind="KIND_UNIT"/>
+		
+		<Row Type="ABILITY_ITEM_ESCORT" Kind="KIND_ABILITY"/>
+	</Types>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_MIMIC" AiType="UNITAI_SETTLE"/>
+		<Row UnitType="UNIT_MIMIC" AiType="UNITAI_EXPLORE"/>
+		<Row UnitType="UNIT_MIMIC" AiType="UNITTYPE_LAND_COMBAT"/>
+	</UnitAiInfos>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_MIMIC" ReplacesUnitType="UNIT_SCOUT"/>
+	</UnitReplaces>
+	<Units>
+		<Row UnitType="UNIT_MIMIC" BaseMoves="5" Cost="50" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_NAME" Description="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_DESCRIPTION" CostProgressionModel="COST_PROGRESSION_PREVIOUS_COPIES" CostProgressionParam1="25" PurchaseYield="YIELD_FAITH" MustPurchase="TRUE" PromotionClass="PROMOTION_CLASS_RECON" InitialLevel="2" Maintenance="2" Combat="45" RangedCombat="1" Range="1" TraitType="TRAIT_CIVILIZATION_UNIT_MIMIC"/>
+	</Units>
+	<Tags>
+		<Row Tag="CLASS_ITEM_DELIVER" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="ABILITY_ITEM_ESCORT" Tag="CLASS_ITEM_DELIVER"/>
+
+		<Row Type="UNIT_MIMIC" Tag="CLASS_RECON"/>
+		<Row Type="UNIT_MIMIC" Tag="CLASS_REVEAL_STEALTH"/>
+		<Row Type="UNIT_MIMIC" Tag="CLASS_ITEM_DELIVER"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_ITEM_ESCORT" Name="LOC_ABILITY_ITEM_ESCORT_NAME" Description="LOC_ABILITY_ITEM_ESCORT_DESCRIPTION"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_ITEM_ESCORT</UnitAbilityType>
+			<ModifierId>ESCORT_MOBILITY_SHARED_MOVEMENT</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		
+	</Modifiers>
+	<ModifierArguments>
+		
+	</ModifierArguments>
+	<RequirementSets>
+		
+	</RequirementSets>
+	<RequirementSetRequirements>
+		
+	</RequirementSetRequirements>
+	<Requirements>
+		
+	</Requirements>
+	<RequirementArguments>
+		
+	</RequirementArguments>
+</GameData>

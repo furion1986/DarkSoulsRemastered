@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Dark Souls</Name>
+    <Guid>3ff29ead-abf3-475b-aee8-9a91b4f7602d</Guid>
+    <ProjectGuid>be5aef61-f18b-4c38-bcf5-0e75c4368942</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Prepare to Die</Teaser>
+    <Description>It is a Dark Soul Mod with Civilization Dark Soul and its leader FireKeeper.</Description>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Gameplay"><Criteria>LeaderCriteria</Criteria><File>DS_FireKeeper.xml</File><File>DS_FirelinkShrine.xml</File><File>DS_Buildings.xml</File><File>DS_Mimic.xml</File><File>DS_Requirements.xml</File><File>DS_CommonAbilities.xml</File><File>DS_Weapons.xml</File><File>DS_Equipments.xml</File><File>DS_Rings.xml</File><File>DS_Projects.xml</File><File>DS_Undead.xml</File><File>DS_Undead_Range.xml</File><File>DS_Promotions.xml</File></UpdateDatabase><UpdateText id="Text"><Criteria>LeaderCriteria</Criteria><File>DS_Text.xml</File><File>DS_Text_CN.xml</File></UpdateText><UpdateIcons id="Icons"><Criteria>LeaderCriteria</Criteria><File>DS_Icons.xml</File></UpdateIcons><UpdateArt id="Art"><Criteria>LeaderCriteria</Criteria><File>(Mod Art Dependency File)</File></UpdateArt><AddGameplayScripts id="Script"><File>GameScripts/DS_GameScripts.lua</File></AddGameplayScripts><ImportFiles id="PlayanimLua"><File>GameScripts/DS_PlayAnim.lua</File><File>UI/Popups/TechCivicCompletedPopup.lua</File><File>UI/Civ6Common.lua</File><File>UI/DiplomacyActionView.lua</File><File>UI/UnitFlagManager.lua</File></ImportFiles><AddUserInterfaces id="Playanim"><Properties><Context>InGame</Context></Properties><File>GameScripts/DS_PlayAnim.xml</File></AddUserInterfaces></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="Config"><File>DS_Config.xml</File></UpdateDatabase><UpdateText id="ConfigText"><File>DS_Text.xml</File><File>DS_Text_CN.xml</File></UpdateText><UpdateIcons id="ConfigIcons"><File>DS_Icons.xml</File></UpdateIcons><UpdateArt id="ConfigArt"><File>(Mod Art Dependency File)</File></UpdateArt><ImportFiles id="Loading"><File>UI/FrontEnd/LoadScreen.lua</File><File>UI/Civ6Common.lua</File></ImportFiles></FrontEndActions>]]></FrontEndActionData>
+    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="LeaderCriteria"><LeaderPlayable>StandardPlayers::LEADER_FIREKEEPER</LeaderPlayable></Criteria></ActionCriteria>]]></ActionCriteriaData>
+    <AssemblyName>DarkSouls</AssemblyName>
+    <RootNamespace>DarkSouls</RootNamespace>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Dlc" title="DLC: Poland Civilization Pack" id="3809975F-263F-40A2-A747-8BFB171D821A" />
+  <Dependency type="Dlc" title="DLC: Australia Civilization Pack" id="E3F53C61-371C-440B-96CE-077D318B36C0" />
+  <Dependency type="Dlc" title="DLC: Persia and Macedon Civilization Pack" id="E2749E9A-8056-45CD-901B-C368C8E83DEB" />
+  <Dependency type="Dlc" title="DLC: Vikings Content" id="2F6E858A-28EF-46B3-BEAC-B985E52E9BC1" />
+  <Dependency type="Dlc" title="DLC: Aztec Civilization Pack" id="02A8BDDE-67EA-4D38-9540-26E685E3156E" />
+  <Dependency type="Dlc" title="DLC: Nubia Civilization Pack" id="643EA320-8E1A-4CF1-A01C-00D88DDD131A" />
+</Associations>]]></AssociationData>
+    <Authors>KCucumber furion1986 Sakemy</Authors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Artdefs\" />
+    <Folder Include="Assets\" />
+    <Folder Include="GameScripts" />
+    <Folder Include="Textures" />
+    <Folder Include="UI\" />
+    <Folder Include="UI\FrontEnd\" />
+    <Folder Include="UI\Popups\" />
+    <Folder Include="XLPs\" />
+    <None Include="ArtDefs\FallbackLeaders.artdef" />
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArtDefs\Buildings.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Districts.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Landmarks.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Units.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Unit_Bins.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\BUILDING_INVIS_BONFIRE.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\DIS_REL_Firelink_Base_01.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\DIS_REL_Firelink_Base_02.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\DIS_REL_Firelink_Base_03.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\DIS_REL_Firelink_Base_04.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\DIS_REL_Firelink_BF.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\LothricKnight_ArmorA.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\LothricRanged_ArmorA.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\Lothric_HelmA.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Buildings.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_CommonAbilities.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Config.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Equipments.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_FirelinkShrine.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_FireKeeper.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Mimic.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Projects.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Promotions.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Requirements.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Rings.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Text.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Text_CN.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Undead.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Undead_Range.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DS_Weapons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameScripts\DS_GameScripts.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameScripts\DS_PlayAnim.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameScripts\DS_PlayAnim.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameScripts\register.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Civ6Common.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\DiplomacyActionView.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\FrontEnd\LoadScreen.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\UnitFlagManager.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Popups\TechCivicCompletedPopup.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\DistrictBuilding.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\DSProject.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\DSUnits.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\DSUnitsProfile.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\hero_buildings.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\LeaderCiv.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\LeaderFallbacks.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\tilebases.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\Units.xlp">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
