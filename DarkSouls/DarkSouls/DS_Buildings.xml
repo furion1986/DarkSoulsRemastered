@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Types>
+		<Row Type="DISTRICT_BONFIRE" Kind="KIND_DISTRICT"/>
+	</Types>
+	
+	<!-- DISTRICT -->
+	<DistrictReplaces>
+		<Row CivUniqueDistrictType="DISTRICT_BONFIRE" ReplacesDistrictType="DISTRICT_HOLY_SITE"/>
+	</DistrictReplaces>
+	<Districts>
+		<Row DistrictType="DISTRICT_BONFIRE" Name="LOC_DISTRICT_BONFIRE_NAME" Description="LOC_TRAIT_CIVILIZATION_DISTRICT_BONFIRE_DESCRIPTION" PlunderType="PLUNDER_FAITH" PlunderAmount="25" AdvisorType="ADVISOR_TECHNOLOGY" Cost="30" CostProgressionModel="COST_PROGRESSION_NUM_UNDER_AVG_PLUS_TECH" CostProgressionParam1="25" Maintenance="0" RequiresPlacement="true" RequiresPopulation="false" Coast="false" AllowsHolyCity="true" Aqueduct="false" NoAdjacentCity="false" InternalOnly="false" ZOC="false" CaptureRemovesBuildings="false" CaptureRemovesCityDefenses="false" MilitaryDomain="DOMAIN_LAND" TravelTime="1" Appeal="1" CityStrengthModifier="2" TraitType="TRAIT_CIVILIZATION_DISTRICT_BONFIRE"/>
+	</Districts>
+	<District_Adjacencies>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Mountains_Science1"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Mountains_Science2"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Mountains_Science3"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Mountains_Science4"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Mountains_Science5"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Jungle_Science"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="District_Science"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="NaturalWonder_Faith"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Mountain_Faith1"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Mountain_Faith2"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Mountain_Faith3"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Mountain_Faith4"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Mountain_Faith5"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Forest_Faith"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="District_Faith"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="River_Gold"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Harbor_Gold"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="District_Gold"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="SeaResource_Gold"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Harbor_City_Gold"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Wonder_Culture"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="District_Culture"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Mine_Production"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="Quarry_Production"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldChangeId="District_Production"/>
+	</District_Adjacencies>
+	<District_CitizenYieldChanges>
+		<!--<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_SOUL" YieldChange="2"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_FOOD" YieldChange="1"/>-->
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_FAITH" YieldChange="4"/>
+		<!--<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_PRODUCTION" YieldChange="1"/>-->
+	</District_CitizenYieldChanges>
+	<District_GreatPersonPoints>
+		<Row DistrictType="DISTRICT_BONFIRE" GreatPersonClassType="GREAT_PERSON_CLASS_PROPHET" PointsPerTurn="1"/>
+	</District_GreatPersonPoints>
+	<District_TradeRouteYields>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_FOOD" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>
+		<!--<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_GOLD" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="0"/>-->
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_FAITH" YieldChangeAsOrigin="2" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="0"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_CULTURE" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="0"/>
+		<!--<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_SCIENCE" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="0"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_PRODUCTION" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>-->
+	</District_TradeRouteYields>
+	<DistrictModifiers>
+		<Row>
+			<DistrictType>DISTRICT_BONFIRE</DistrictType>
+			<ModifierId>BONFIRE_REST_HEALING_MODIFIER</ModifierId>
+		</Row>
+	</DistrictModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>BONFIRE_REST_HEALING_MODIFIER</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_HEAL_PER_TURN</ModifierType>
+			<SubjectRequirementSetId>PLOT_HAS_BONFIRE_DISTRICT</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>BONFIRE_REST_HEALING_MODIFIER</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>BONFIRE_REST_HEALING_MODIFIER</ModifierId>
+			<Name>Type</Name>
+			<Value>ALL</Value>
+		</Row>
+	</ModifierArguments>
+
+	<Buildings>
+		<Update>
+			<Where BuildingType="BUILDING_AIRPORT"/>
+			<Set PrereqDistrict="DISTRICT_HOLY_SITE" Cost="30" Name="LOC_TRAIT_LEADER_BUILDING_LIT_BONFIRE_NAME" Description="LOC_TRAIT_LEADER_BUILDING_LIT_BONFIRE_DESCRIPTION"/>
+		</Update>
+	</Buildings>
+	<BuildingPrereqs>
+		<Delete Building="BUILDING_AIRPORT"/>
+	</BuildingPrereqs>
+</GameData>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DS_Undead -->
+<!-- Author: Administrator -->
+<!-- DateCreated: 8/7/2017 3:58:32 AM -->
+<GameData>
+	<Types>
+		<Row Type="UNIT_UNDEAD" Kind="KIND_UNIT"/>
+		<Row Type="ABILITY_UNDEAD" Kind="KIND_ABILITY"/>
+		<Row Type="ABILITY_ESTUS_FLASK" Kind="KIND_ABILITY"/>
+	</Types>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_UNDEAD" AiType="UNITAI_COMBAT"/>
+		<Row UnitType="UNIT_UNDEAD" AiType="UNITAI_EXPLORE"/>
+		<Row UnitType="UNIT_UNDEAD" AiType="UNITTYPE_MELEE"/>
+		<Row UnitType="UNIT_UNDEAD" AiType="UNITTYPE_LAND_COMBAT"/>
+	</UnitAiInfos>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_UNDEAD" ReplacesUnitType="UNIT_WARRIOR"/>
+	</UnitReplaces>
+	<Units>
+		<Row UnitType="UNIT_UNDEAD" BaseMoves="3" Cost="500" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="1" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_NAME" Description="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_DESCRIPTION" PromotionClass="PROMOTION_CLASS_UNDEAD" Maintenance="1" Combat="15" TraitType="TRAIT_CIVILIZATION_UNIT_UNDEAD"/>
+	</Units>
+	<Tags>
+		<Row Tag="CLASS_UNDEAD" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="ABILITY_UNDEAD" Tag="CLASS_UNDEAD"/>
+		<Row Type="ABILITY_ESTUS_FLASK" Tag="CLASS_UNDEAD"/>
+		<Row Type="ABILITY_ITEM_ESCORT" Tag="CLASS_UNDEAD"/>
+
+		<Row Type="UNIT_UNDEAD" Tag="CLASS_UNDEAD"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_UNDEAD" Name="LOC_ABILITY_UNDEAD_NAME" Description="LOC_ABILITY_UNDEAD_DESCRIPTION"/>
+		<Row UnitAbilityType="ABILITY_ESTUS_FLASK" Name="LOC_ABILITY_ESTUS_FLASK_NAME" Description="LOC_ABILITY_ESTUS_FLASK_DESCRIPTION"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_UNDEAD</UnitAbilityType>
+			<ModifierId>UNDEAD_POST_COMBAT_SOUL</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_ESTUS_FLASK</UnitAbilityType>
+			<ModifierId>ESTUS_FLASK_HEAL_BONUS</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>UNDEAD_POST_COMBAT_SOUL</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>ESTUS_FLASK_HEAL_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>UNDEAD_POST_COMBAT_SOUL</ModifierId>
+			<Name>PercentDefeatedStrength</Name>
+			<Value>50</Value>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_POST_COMBAT_SOUL</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+		<Row>
+			<ModifierId>ESTUS_FLASK_HEAL_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>
