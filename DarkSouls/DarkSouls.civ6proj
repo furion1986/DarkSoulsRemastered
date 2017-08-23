@@ -82,6 +82,9 @@
     <Content Include="Assets\LothricRanged_ArmorA.ast">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Assets\Lothric_HelmA.ast">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="DS_Buildings.xml">
       <SubType>Content</SubType>
     </Content>
