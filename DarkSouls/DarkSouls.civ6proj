@@ -154,6 +154,9 @@
     <Content Include="UI\FrontEnd\LoadScreen.lua">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UI\UnitFlagManager.lua">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UI\Popups\TechCivicCompletedPopup.lua">
       <SubType>Content</SubType>
     </Content>
