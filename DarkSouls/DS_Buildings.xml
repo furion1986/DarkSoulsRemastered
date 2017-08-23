@@ -41,9 +41,9 @@
 	<District_CitizenYieldChanges>
 		<!--<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_SOUL" YieldChange="2"/>
 		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_FOOD" YieldChange="1"/>-->
-		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_FAITH" YieldChange="2"/>
-		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_SCIENCE" YieldChange="2"/>
-		<!--<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_FAITH" YieldChange="4"/>
+		<!--<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_CULTURE" YieldChange="1"/>
 		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_PRODUCTION" YieldChange="1"/>-->
 	</District_CitizenYieldChanges>
 	<District_GreatPersonPoints>
@@ -53,9 +53,9 @@
 		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_FOOD" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>
 		<!--<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_GOLD" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="0"/>-->
 		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_FAITH" YieldChangeAsOrigin="2" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="0"/>
-		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_SCIENCE" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="0"/>
-		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_CULTURE" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>
-		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_PRODUCTION" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_CULTURE" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="0"/>
+		<!--<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_SCIENCE" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="0"/>
+		<Row DistrictType="DISTRICT_BONFIRE" YieldType="YIELD_PRODUCTION" YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>-->
 	</District_TradeRouteYields>
 	<DistrictModifiers>
 		<Row>
@@ -67,7 +67,7 @@
 		<Row>
 			<ModifierId>BONFIRE_REST_HEALING_MODIFIER</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_HEAL_PER_TURN</ModifierType>
-			<SubjectRequirementSetId>PLOT_ADJACENT_INCLUDE_HOLY_SITE</SubjectRequirementSetId>
+			<SubjectRequirementSetId>PLOT_HAS_BONFIRE_DISTRICT</SubjectRequirementSetId>
 		</Row>
 	</Modifiers>
 	<ModifierArguments>
