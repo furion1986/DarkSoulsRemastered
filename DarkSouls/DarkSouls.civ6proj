@@ -46,6 +46,9 @@
     <Content Include="ArtDefs\Buildings.artdef">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ArtDefs\CityGenerators.artdef">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ArtDefs\Civilizations.artdef">
       <SubType>Content</SubType>
     </Content>

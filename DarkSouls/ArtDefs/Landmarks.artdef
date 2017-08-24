@@ -2369,11 +2369,11 @@
 				<m_Fields>
 					<m_Values>
 						<Element class="AssetObjects:ArtDefReferenceValue">
-							<m_ElementName text="Gen_CityCenter"/>
+							<m_ElementName text="Gen_DSCityCenter"/>
 							<m_RootCollectionName text="Generator"/>
 							<m_ArtDefPath text="CityGenerators.artdef"/>
-							<m_CollectionIsLocked>false</m_CollectionIsLocked>
-							<m_TemplateName text=""/>
+							<m_CollectionIsLocked>true</m_CollectionIsLocked>
+							<m_TemplateName text="CityGenerators"/>
 							<m_ParamName text="DistrictGenerator"/>
 						</Element>
 						<Element class="AssetObjects:RGBValue">
