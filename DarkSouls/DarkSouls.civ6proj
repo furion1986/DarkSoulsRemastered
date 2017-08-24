@@ -46,6 +46,12 @@
     <Content Include="ArtDefs\Buildings.artdef">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ArtDefs\Civilizations.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Cultures.artdef">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ArtDefs\Districts.artdef">
       <SubType>Content</SubType>
     </Content>
