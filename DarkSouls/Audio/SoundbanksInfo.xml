@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\fhuang\Documents\WwiseProjects\DS_BackgroundMusic\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\fhuang\Documents\WwiseProjects\DS_BackgroundMusic\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\fhuang\Documents\WwiseProjects\DS_BackgroundMusic\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\fhuang\Documents\WwiseProjects\DS_BackgroundMusic\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles>
+		<File Id="114710422" Language="SFX">
+			<ShortName>Knight Artorias.wav</ShortName>
+			<Path>SFX\Knight Artorias_4B8CC0C5.wem</Path>
+		</File>
+	</StreamedFiles>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1879591619" Language="SFX">
+			<ShortName>DS_MOD</ShortName>
+			<Path>DS_MOD.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1040287178" Name="Game_Start_Music"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="114710422"/>
+			</ReferencedStreamedFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

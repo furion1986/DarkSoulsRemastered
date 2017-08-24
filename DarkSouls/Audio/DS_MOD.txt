@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1040287178	Game_Start_Music			\Default Work Unit\Game_Start_Music	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	114710422	DS_BGM	C:\Users\fhuang\Documents\WwiseProjects\DS_BackgroundMusic\.cache\Windows\SFX\Knight Artorias_4B8CC0C5.wem	114710422.wem	\Actor-Mixer Hierarchy\Default Work Unit\DS_BGM	
+
