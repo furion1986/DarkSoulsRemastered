@@ -286,6 +286,28 @@
 		<Row Type="ABILITY_AUTO_HEAL" Tag="CLASS_COVENANT_OF_ARTORIAS"/>
 		<Row Type="ABILITY_GREAT_ATTACK" Tag="CLASS_COVENANT_OF_ARTORIAS"/>
 	</TypeTags>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_NORMAL_SPEAR" ReplacesUnitType="UNIT_SPEARMAN"/>
+		<Row CivUniqueUnitType="UNIT_WINGED_SPEAR" ReplacesUnitType="UNIT_PIKEMAN"/>
+		<Row CivUniqueUnitType="UNIT_SILVER_KNIGHT_SPEAR" ReplacesUnitType="UNIT_AT_CREW"/>
+		
+		<Row CivUniqueUnitType="UNIT_NORMAL_CLUB" ReplacesUnitType="UNIT_WARRIOR"/>
+		<Row CivUniqueUnitType="UNIT_NORMAL_MACE" ReplacesUnitType="UNIT_SWORDSMAN"/>
+		<Row CivUniqueUnitType="UNIT_DEMONS_GREAT_HAMMER" ReplacesUnitType="UNIT_INFANTRY"/>
+
+		<Row CivUniqueUnitType="UNIT_CLAYMORE" ReplacesUnitType="UNIT_HEAVY_CHARIOT"/>
+		<Row CivUniqueUnitType="UNIT_ZWEIHANDER" ReplacesUnitType="UNIT_KNIGHT"/>
+		<Row CivUniqueUnitType="UNIT_BLACK_KNIGHT_SWORD" ReplacesUnitType="UNIT_TANK"/>
+
+		<Row CivUniqueUnitType="UNIT_SHORT_SWORD" ReplacesUnitType="UNIT_HORSEMAN"/>
+		<Row CivUniqueUnitType="UNIT_SUNLIGHT_STRAIGHT_SWORD" ReplacesUnitType="UNIT_CAVALRY"/>
+		<Row CivUniqueUnitType="UNIT_SILVER_KNIGHT_STRAIGHT_SWORD" ReplacesUnitType="UNIT_HELICOPTER"/>
+		
+		<Row CivUniqueUnitType="UNIT_SHORT_BOW" ReplacesUnitType="UNIT_SLINGER"/>
+		<Row CivUniqueUnitType="UNIT_COMPOSITE_BOW" ReplacesUnitType="UNIT_ARCHER"/>
+		<Row CivUniqueUnitType="UNIT_DRAGONSLAYER_GREATBOW" ReplacesUnitType="UNIT_CROSSBOWMAN"/>
+		<Row CivUniqueUnitType="UNIT_DARK_SILVER_TRACER" ReplacesUnitType="UNIT_FIELD_CANNON"/>
+	</UnitReplaces>
 	<Units>
 		<!--Spear-->
 		<Row UnitType="UNIT_NORMAL_SPEAR" BaseMoves="0" Cost="30" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="1" ZoneOfControl="false" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_CIVILIAN" Name="LOC_UNIT_NORMAL_SPEAR_NAME" Description="LOC_UNIT_NORMAL_SPEAR_DESCRIPTION" PurchaseYield="YIELD_FAITH" PromotionClass="PROMOTION_CLASS_SUPPORT" Maintenance="0" MandatoryObsoleteTech="TECH_EDUCATION" PrereqTech="TECH_BRONZE_WORKING" MustPurchase="TRUE" CanCapture="False" TraitType="TRAIT_LEADER_BUY_ITEMS" />
