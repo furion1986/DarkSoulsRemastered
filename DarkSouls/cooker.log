@@ -1,5 +1,6 @@
 Starting AssetCooker...
 XLP cook starting...
+<<<<<<< HEAD
 C:\Users\Furion\Documents\Firaxis ModBuddy\Civilization VI\DarkSoulsRemastered\DarkSouls\XLPs\Units.xlp
 Opened output file: C:\Users\Furion\Documents\My Games\Sid Meier's Civilization VI\Mods\DarkSouls\Platforms\MacOS\BLPs/units/units.blp    For XLP: 'C:\Users\Furion\Documents\Firaxis ModBuddy\Civilization VI\DarkSoulsRemastered\DarkSouls\XLPs\Units.xlp'
 Starting 'units/units'
@@ -9,3 +10,14 @@ Disk write finished for: 'units/units' in 0.382 seconds
 Cleanup finished for: 'units/units' in 0.011 seconds
 XLP cook completed with success.
 Cook completed in 0.988 seconds
+=======
+C:\Users\Administrator\Documents\Firaxis ModBuddy\Civilization VI\DarkSoulsRemastered\DarkSouls\XLPs\Units.xlp
+Opened output file: C:\Users\Administrator\Documents\My Games\Sid Meier's Civilization VI\Mods\DarkSouls\Platforms\MacOS\BLPs/units/units.blp    For XLP: 'C:\Users\Administrator\Documents\Firaxis ModBuddy\Civilization VI\DarkSoulsRemastered\DarkSouls\XLPs\Units.xlp'
+Starting 'units/units'
+Load finished for: 'units/units' in 0.371 seconds
+Cook finished for: 'units/units' in 0.002 seconds
+Disk write finished for: 'units/units' in 0.062 seconds
+Cleanup finished for: 'units/units' in 0.010 seconds
+XLP cook completed with success.
+Cook completed in 0.589 seconds
+>>>>>>> f6b5a1e431dbed643d4f97fab0b380081dcd7c65
