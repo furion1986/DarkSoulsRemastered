@@ -28,11 +28,31 @@
 			<loadsLibraries>true</loadsLibraries>
 		</Element>
 		<Element>
+			<ConsumerName text="Civilizations"/>
+			<ArtDefDependencyPaths>
+				<Element text="Civilizations.artdef"/>
+			</ArtDefDependencyPaths>
+			<LibraryDependencies/>
+			<LoadsLibraries>true</LoadsLibraries>
+		</Element>
+		<Element>
+			<ConsumerName text="Cultures"/>
+			<ArtDefDependencyPaths>
+				<Element text="Civilizations.artdef"/>
+				<Element text="Cultures.artdef"/>
+			</ArtDefDependencyPaths>
+			<LibraryDependencies/>
+			<LoadsLibraries>true</LoadsLibraries>
+		</Element>
+		<Element>
 			<consumerName text="Landmarks"/>
 			<relativeArtDefPaths>
 				<Element text="Landmarks.artdef" />
 				<Element text="Districts.artdef"/>
 				<Element text="Buildings.artdef"/>
+				<Element text="Cultures.artdef"/>
+				<Element text="Civilizations.artdef"/>
+				<Element text="CityGenerators.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="CityBuildings"/>
@@ -295,6 +315,9 @@
 		<Element>
 			<consumerName text="Audio"/>
 			<relativeArtDefPaths>
+				<Element text="Civilizations.artdef"/>
+				<Element text="Leaders.artdef"/>
+				<Element text="Cultures.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies/>
 			<loadsLibraries>false</loadsLibraries>

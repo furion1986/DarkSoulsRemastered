@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Furion\Documents\WwiseProjects\DS_BGM\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Furion\Documents\WwiseProjects\DS_BGM\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Furion\Documents\WwiseProjects\DS_BGM\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Furion\Documents\WwiseProjects\DS_BGM\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles>
+		<File Id="705600222" Language="SFX">
+			<ShortName>02 Firelink Shrine.wav</ShortName>
+			<Path>SFX\02 Firelink Shrine_4B8CC0C5.wem</Path>
+		</File>
+	</StreamedFiles>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="475733979" Language="SFX">
+			<ShortName>DS_Music_Bank</ShortName>
+			<Path>DS_Music_Bank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="140454022" Name="Pause_Music_Firekeeper"/>
+				<Event Id="2161490826" Name="Play_Leader_Music_Firekeeper"/>
+				<Event Id="1739409548" Name="Play_Music_Firekeeper"/>
+				<Event Id="2277931897" Name="Resume_Music_Firekeeper"/>
+				<Event Id="2728979188" Name="Start_Music_Firekeeper"/>
+				<Event Id="330136448" Name="Stop_Leader_Music_Firekeeper"/>
+				<Event Id="3717505518" Name="Stop_Music_Firekeeper"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="705600222"/>
+			</ReferencedStreamedFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

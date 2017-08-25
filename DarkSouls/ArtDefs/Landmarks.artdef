@@ -2369,7 +2369,7 @@
 				<m_Fields>
 					<m_Values>
 						<Element class="AssetObjects:ArtDefReferenceValue">
-							<m_ElementName text="Gen_DSCityCenter"/>
+							<m_ElementName text="Gen_CityCenter"/>
 							<m_RootCollectionName text="Generator"/>
 							<m_ArtDefPath text="CityGenerators.artdef"/>
 							<m_CollectionIsLocked>true</m_CollectionIsLocked>
@@ -2383,8 +2383,8 @@
 							<m_ParamName text="TintColor"/>
 						</Element>
 						<Element class="AssetObjects:BoolValue">
-							<m_bValue>false</m_bValue>
-							<m_ParamName text="IsAuthored"/>
+							<m_bValue>true</m_bValue>
+							<m_ParamName text="FlattenTerrain"/>
 						</Element>
 						<Element class="AssetObjects:BoolValue">
 							<m_bValue>false</m_bValue>
@@ -2395,8 +2395,8 @@
 							<m_ParamName text="bUseCityScale"/>
 						</Element>
 						<Element class="AssetObjects:BoolValue">
-							<m_bValue>true</m_bValue>
-							<m_ParamName text="FlattenTerrain"/>
+							<m_bValue>false</m_bValue>
+							<m_ParamName text="DistrictDamagePillagesBuildings"/>
 						</Element>
 					</m_Values>
 				</m_Fields>

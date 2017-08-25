@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	140454022	Pause_Music_Firekeeper			\Music\Pause_Music_Firekeeper	
+	330136448	Stop_Leader_Music_Firekeeper			\Music\Stop_Leader_Music_Firekeeper	
+	1739409548	Play_Music_Firekeeper			\Music\Play_Music_Firekeeper	
+	2161490826	Play_Leader_Music_Firekeeper			\Music\Play_Leader_Music_Firekeeper	
+	2277931897	Resume_Music_Firekeeper			\Music\Resume_Music_Firekeeper	
+	2728979188	Start_Music_Firekeeper			\Music\Start_Music_Firekeeper	
+	3717505518	Stop_Music_Firekeeper			\Music\Stop_Music_Firekeeper	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	705600222	FirekeeperAncientTheme	C:\Users\Furion\Documents\WwiseProjects\DS_BGM\.cache\Windows\SFX\02 Firelink Shrine_4B8CC0C5.wem	705600222.wem	\Interactive Music Hierarchy\PrototypeMusic\Game_Music_Master\Game_Music_Playlist\Firekeeper\Firekeeper_Music_Ancient\Firekeeper_Leader_Music_Ancient\FirekeeperAncientTheme	
+
