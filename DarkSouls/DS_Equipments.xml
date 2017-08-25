@@ -128,6 +128,18 @@
 		<Row Type="ABILITY_GOUGHS_GREAT_ARROW" Tag="CLASS_GOUGHS_GREAT_ARROW"/>
 		<Row Type="ABILITY_MAGIC_WEAPON" Tag="CLASS_MAGIC_WEAPON"/>
 	</TypeTags>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_DARK_PINE_RESIN" ReplacesUnitType="UNIT_SIEGE_TOWER"/>
+		<Row CivUniqueUnitType="UNIT_PALE_PINE_RESIN" ReplacesUnitType="UNIT_BATTERING_RAM"/>
+		<Row CivUniqueUnitType="UNIT_GOLD_PINE_RESIN" ReplacesUnitType="UNIT_MECHANIZED_INFANTRY"/>
+		<Row CivUniqueUnitType="UNIT_GREAT_SHIELD" ReplacesUnitType="UNIT_MODERN_AT"/>
+		<Row CivUniqueUnitType="UNIT_HEAVY_ARMOR" ReplacesUnitType="UNIT_MODERN_ARMOR"/>
+
+		<Row CivUniqueUnitType="UNIT_STANDARD_ARROW" ReplacesUnitType="UNIT_CATAPULT"/>
+		<Row CivUniqueUnitType="UNIT_POISON_ARROW" ReplacesUnitType="UNIT_BOMBARD"/>
+		<Row CivUniqueUnitType="UNIT_DRAGONSLAYER_ARROW" ReplacesUnitType="UNIT_ARTILLERY"/>
+		<Row CivUniqueUnitType="UNIT_GOUGHS_GREAT_ARROW" ReplacesUnitType="UNIT_ROCKET_ARTILLERY"/>
+	</UnitReplaces>
 	<Units>
 		<!-- Support Equipments -->
 		<Row UnitType="UNIT_SMALL_SHIELD" BaseMoves="0" Cost="30" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="1" ZoneOfControl="false" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_SUPPORT" Name="LOC_UNIT_SMALL_SHIELD_NAME" Description="LOC_UNIT_SMALL_SHIELD_DESCRIPTION" PurchaseYield="YIELD_FAITH" PromotionClass="PROMOTION_CLASS_SUPPORT" Maintenance="0" PrereqTech="TECH_POTTERY" MustPurchase="TRUE" CanCapture="False" TraitType="TRAIT_LEADER_BUY_ITEMS" />

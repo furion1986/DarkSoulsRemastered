@@ -114,6 +114,10 @@
 		<Row Type="ABILITY_CALAMITY_RING" Tag="CLASS_CALAMITY_RING"/>
 		<Row Type="ABILITY_MEDIUM_DEFENCE" Tag="CLASS_MEDIUM_DEFENCE"/>
 	</TypeTags>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_HAVELS_RING" ReplacesUnitType="UNIT_RANGER"/>
+		<Row CivUniqueUnitType="UNIT_HAWK_RING" ReplacesUnitType="UNIT_MACHINE_GUN"/>
+	</UnitReplaces>
 	<Units>
 		<!-- Rings -->
 		<Row UnitType="UNIT_HAVELS_RING" BaseMoves="0" Cost="100" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="1" ZoneOfControl="false" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_SUPPORT" Name="LOC_UNIT_HAVELS_RING_NAME" Description="LOC_UNIT_HAVELS_RING_DESCRIPTION" PurchaseYield="YIELD_FAITH" PromotionClass="PROMOTION_CLASS_SUPPORT" Maintenance="0" PrereqCivic="CIVIC_DIPLOMATIC_SERVICE" MustPurchase="TRUE" CanCapture="False" TraitType="TRAIT_LEADER_BUY_ITEMS" />

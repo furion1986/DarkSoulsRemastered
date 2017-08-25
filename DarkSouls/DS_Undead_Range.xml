@@ -11,11 +11,11 @@
 		<Row UnitType="UNIT_UNDEAD_RANGE" AiType="UNITTYPE_RANGED"/>
 		<Row UnitType="UNIT_UNDEAD_RANGE" AiType="UNITTYPE_LAND_COMBAT"/>
 	</UnitAiInfos>
-	<UnitReplaces>
+	<!--<UnitReplaces>
 		<Row CivUniqueUnitType="UNIT_UNDEAD_RANGE" ReplacesUnitType="UNIT_SLINGER"/>
-	</UnitReplaces>
+	</UnitReplaces>-->
 	<Units>
-		<Row UnitType="UNIT_UNDEAD_RANGE" BaseMoves="3" Cost="500" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="1" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE_NAME" Description="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE_DESCRIPTION" PromotionClass="PROMOTION_CLASS_UNDEAD" Maintenance="1" Combat="5" RangedCombat="15" Range="0" CanTrain="False" TraitType="TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE"/>
+		<Row UnitType="UNIT_UNDEAD_RANGE" BaseMoves="3" Cost="500" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="1" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE_NAME" Description="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE_DESCRIPTION" PromotionClass="PROMOTION_CLASS_RANGED" Maintenance="1" Combat="5" RangedCombat="15" Range="0" TraitType="TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE"/>
 	</Units>
 	<TypeTags>
 		<Row Type="UNIT_UNDEAD_RANGE" Tag="CLASS_UNDEAD"/>
