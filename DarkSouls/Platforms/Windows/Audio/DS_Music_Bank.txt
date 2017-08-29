@@ -7,6 +7,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	2728979188	Start_Music_Firekeeper			\Music\Start_Music_Firekeeper	
 	3717505518	Stop_Music_Firekeeper			\Music\Stop_Music_Firekeeper	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	373350295	Game_Location			\Default Work Unit\Game_Location	
+
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	705600222	FirekeeperAncientTheme	C:\Users\Furion\Documents\WwiseProjects\DS_BGM\.cache\Windows\SFX\02 Firelink Shrine_4B8CC0C5.wem	705600222.wem	\Interactive Music Hierarchy\PrototypeMusic\Game_Music_Master\Game_Music_Playlist\Firekeeper\Firekeeper_Music_Ancient\Firekeeper_Leader_Music_Ancient\FirekeeperAncientTheme	
+	436128722	02 Firelink Shrine	C:\Users\Furion\Documents\WwiseProjects\DS_BGM\.cache\Windows\SFX\02 Firelink Shrine_4B8CC0C5.wem	436128722.wem	\Interactive Music Hierarchy\Default Work Unit\DS_Music\DS_Ancient_Era_Music\DS_Ancient_Era_Leader_Music\02 Firelink Shrine	
+	899964860	11 Gwynevere Princess of Sunlight	C:\Users\Furion\Documents\WwiseProjects\DS_BGM\.cache\Windows\SFX\11 Gwynevere, Princess of Sunlight_4B8CC0C5.wem	899964860.wem	\Interactive Music Hierarchy\Default Work Unit\DS_Music\DS_Industrial_Era_Music\DS_Industrial_Era_Leader_Music\11 Gwynevere Princess of Sunlight	
 

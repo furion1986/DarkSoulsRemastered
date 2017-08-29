@@ -9,9 +9,13 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
-		<File Id="705600222" Language="SFX">
+		<File Id="436128722" Language="SFX">
 			<ShortName>02 Firelink Shrine.wav</ShortName>
 			<Path>SFX\02 Firelink Shrine_4B8CC0C5.wem</Path>
+		</File>
+		<File Id="899964860" Language="SFX">
+			<ShortName>11 Gwynevere, Princess of Sunlight.wav</ShortName>
+			<Path>SFX\11 Gwynevere, Princess of Sunlight_4B8CC0C5.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
@@ -29,7 +33,8 @@
 				<Event Id="3717505518" Name="Stop_Music_Firekeeper"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
-				<File Id="705600222"/>
+				<File Id="436128722"/>
+				<File Id="899964860"/>
 			</ReferencedStreamedFiles>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
