@@ -24,13 +24,13 @@
 			<ShortName>DS_Music_Bank</ShortName>
 			<Path>DS_Music_Bank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="140454022" Name="Pause_Music_Firekeeper"/>
-				<Event Id="2161490826" Name="Play_Leader_Music_Firekeeper"/>
-				<Event Id="1739409548" Name="Play_Music_Firekeeper"/>
-				<Event Id="2277931897" Name="Resume_Music_Firekeeper"/>
-				<Event Id="2728979188" Name="Start_Music_Firekeeper"/>
-				<Event Id="330136448" Name="Stop_Leader_Music_Firekeeper"/>
-				<Event Id="3717505518" Name="Stop_Music_Firekeeper"/>
+				<Event Id="1705576536" Name="Pause_Music_FIRELINK"/>
+				<Event Id="2435575012" Name="Play_Leader_Music_FIRELINK"/>
+				<Event Id="1184827702" Name="Play_Music_FIRELINK"/>
+				<Event Id="4023303183" Name="Resume_Music_FIRELINK"/>
+				<Event Id="2136495630" Name="Start_Music_FIRELINK"/>
+				<Event Id="496685938" Name="Stop_Leader_Music_FIRELINK"/>
+				<Event Id="4164967344" Name="Stop_Music_FIRELINK"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="436128722"/>

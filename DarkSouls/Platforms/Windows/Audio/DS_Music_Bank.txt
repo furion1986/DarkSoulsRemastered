@@ -1,11 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
-	140454022	Pause_Music_Firekeeper			\Music\Pause_Music_Firekeeper	
-	330136448	Stop_Leader_Music_Firekeeper			\Music\Stop_Leader_Music_Firekeeper	
-	1739409548	Play_Music_Firekeeper			\Music\Play_Music_Firekeeper	
-	2161490826	Play_Leader_Music_Firekeeper			\Music\Play_Leader_Music_Firekeeper	
-	2277931897	Resume_Music_Firekeeper			\Music\Resume_Music_Firekeeper	
-	2728979188	Start_Music_Firekeeper			\Music\Start_Music_Firekeeper	
-	3717505518	Stop_Music_Firekeeper			\Music\Stop_Music_Firekeeper	
+	496685938	Stop_Leader_Music_FIRELINK			\Music\Stop_Leader_Music_FIRELINK	
+	1184827702	Play_Music_FIRELINK			\Music\Play_Music_FIRELINK	
+	1705576536	Pause_Music_FIRELINK			\Music\Pause_Music_FIRELINK	
+	2136495630	Start_Music_FIRELINK			\Music\Start_Music_FIRELINK	
+	2435575012	Play_Leader_Music_FIRELINK			\Music\Play_Leader_Music_FIRELINK	
+	4023303183	Resume_Music_FIRELINK			\Music\Resume_Music_FIRELINK	
+	4164967344	Stop_Music_FIRELINK			\Music\Stop_Music_FIRELINK	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	373350295	Game_Location			\Default Work Unit\Game_Location	
