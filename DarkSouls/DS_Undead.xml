@@ -18,7 +18,7 @@
 		<Row CivUniqueUnitType="UNIT_UNDEAD" ReplacesUnitType="UNIT_WARRIOR"/>
 	</UnitReplaces>-->
 	<Units>
-		<Row UnitType="UNIT_UNDEAD" BaseMoves="3" Cost="500" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="1" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_NAME" Description="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_DESCRIPTION" PromotionClass="PROMOTION_CLASS_MELEE" Maintenance="1" Combat="15" TraitType="TRAIT_CIVILIZATION_UNIT_UNDEAD"/>
+		<Row UnitType="UNIT_UNDEAD" BaseMoves="3" Cost="500" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="1" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_NAME" Description="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_DESCRIPTION" PromotionClass="PROMOTION_CLASS_UNDEAD" Maintenance="1" Combat="15" TraitType="TRAIT_CIVILIZATION_UNIT_UNDEAD"/>
 	</Units>
 	<Tags>
 		<Row Tag="CLASS_UNDEAD" Vocabulary="ABILITY_CLASS"/>

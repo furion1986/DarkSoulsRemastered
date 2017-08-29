@@ -17,7 +17,7 @@
 		<Row CivUniqueUnitType="UNIT_MIMIC" ReplacesUnitType="UNIT_SCOUT"/>
 	</UnitReplaces>
 	<Units>
-		<Row UnitType="UNIT_MIMIC" BaseMoves="5" Cost="50" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_NAME" Description="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_DESCRIPTION" CostProgressionModel="COST_PROGRESSION_PREVIOUS_COPIES" CostProgressionParam1="25" PurchaseYield="YIELD_FAITH" MustPurchase="TRUE" PromotionClass="PROMOTION_CLASS_RECON" InitialLevel="2" Maintenance="2" Combat="45" RangedCombat="1" Range="1" TraitType="TRAIT_CIVILIZATION_UNIT_MIMIC"/>
+		<Row UnitType="UNIT_MIMIC" BaseMoves="5" Cost="50" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_NAME" Description="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_DESCRIPTION" CostProgressionModel="COST_PROGRESSION_PREVIOUS_COPIES" CostProgressionParam1="25" PurchaseYield="YIELD_FAITH" MustPurchase="TRUE" PromotionClass="PROMOTION_CLASS_RECON" Maintenance="2" Combat="40" RangedCombat="1" Range="1" TraitType="TRAIT_CIVILIZATION_UNIT_MIMIC"/>
 	</Units>
 	<Tags>
 		<Row Tag="CLASS_ITEM_DELIVER" Vocabulary="ABILITY_CLASS"/>

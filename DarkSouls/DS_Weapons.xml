@@ -993,7 +993,7 @@
 		<Row>
 			<ModifierId>WINGED_SPEAR_COMBAT_BONUS_MODIFIER</ModifierId>
 			<Name>Amount</Name>
-			<Value>35</Value>
+			<Value>30</Value>
 		</Row>
 		<Row>
 			<ModifierId>SILVER_KNIGHT_SPEAR_COMBAT_BONUS</ModifierId>
@@ -1003,7 +1003,7 @@
 		<Row>
 			<ModifierId>SILVER_KNIGHT_SPEAR_COMBAT_BONUS_MODIFIER</ModifierId>
 			<Name>Amount</Name>
-			<Value>55</Value>
+			<Value>50</Value>
 		</Row>
 		<Row>
 			<ModifierId>DRAGONSLAYER_SPEAR_COMBAT_BONUS</ModifierId>
