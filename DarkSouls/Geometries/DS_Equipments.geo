@@ -10,6 +10,19 @@
 <revision>0</revision>
 </m_Version>
 <m_Meshes>
+<Element>
+<m_Name text="Sphere"/>
+<m_Groups>
+<Element>
+<m_Name text="Material.001"/>
+<m_nFirstPrim>0</m_nFirstPrim>
+<m_nPrims>960</m_nPrims>
+</Element>
+</m_Groups>
+<m_nBoundBoneCount>1</m_nBoundBoneCount>
+<m_nPrimitiveCount>960</m_nPrimitiveCount>
+<m_nVertexCount>1890</m_nVertexCount>
+</Element>
 </m_Meshes>
 <m_Bones>
 <Element text="Knight_HelmA"/>
@@ -23,11 +36,11 @@
 <m_DataFiles>
 <Element>
 <m_ID text="GR2"/>
-<m_RelativePath text="Empty4FX.fgx"/>
+<m_RelativePath text="DS_Equipments.fgx"/>
 </Element>
 </m_DataFiles>
-<m_Name text="Empty4FX"/>
-<m_Description text="Empty4FX"/>
+<m_Name text="DS_Equipments"/>
+<m_Description text="DS_Equipments"/>
 <m_Tags>
 <Element text="Unit"/>
 </m_Tags>
