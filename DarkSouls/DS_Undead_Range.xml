@@ -18,6 +18,7 @@
 		<Row UnitType="UNIT_UNDEAD_RANGE" BaseMoves="3" Cost="500" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="1" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE_NAME" Description="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE_DESCRIPTION" PromotionClass="PROMOTION_CLASS_UNDEAD" Maintenance="1" Combat="5" RangedCombat="15" Range="0" TraitType="TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE"/>
 	</Units>
 	<TypeTags>
+		<Row Type="UNIT_UNDEAD_RANGE" Tag="CLASS_RECON"/>
 		<Row Type="UNIT_UNDEAD_RANGE" Tag="CLASS_UNDEAD"/>
 	</TypeTags>
 </GameData>

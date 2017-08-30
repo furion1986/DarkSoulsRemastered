@@ -41,7 +41,7 @@
 			<Text>宝箱怪</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>替代侦察兵。可用来运输装备。</Text>
+			<Text>替代侦察兵。可用来运输装备。正常情况下无法获得经验值。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_UNIT_HOLLOW_NAME" Language="zh_Hans_CN">
 			<Text>游魂</Text>

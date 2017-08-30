@@ -38,7 +38,7 @@
 			<Text>Mimic</Text>
 		</Row>
 		<Row Tag="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_DESCRIPTION">
-			<Text>Replace Scout. Using for transport Equipments and Weapons.</Text>
+			<Text>Replace Scout. Using for transport Equipments and Weapons. Cannot earn any EXP in normal circumstances.</Text>
 		</Row>
 		<Row Tag="LOC_TRAIT_CIVILIZATION_UNIT_HOLLOW_NAME">
 			<Text>Hollow</Text>
