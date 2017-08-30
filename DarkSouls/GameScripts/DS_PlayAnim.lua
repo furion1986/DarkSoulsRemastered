@@ -19,7 +19,7 @@ function OnUnitSelectionChanged(playerID, unitId, locationX, locationY, location
 			if (unitInfo.UnitType == "UNIT_UNDEAD") then
 				UpdateUndeadAttachment(pUnit);
 			end
-			--SimUnitSystem.SetAnimationState(pUnit, "SPAWN");
+			SimUnitSystem.SetAnimationState(pUnit, "SPAWN");
 		end
 	end
 end
@@ -58,64 +58,52 @@ function OnEnterFormation(playerID1, unitID1, playerID2, unitID2)
 	end
 end
 
-function UpdateUndeadAttachment(unit)
-	print(unit);
+function UpdateUndeadAttachment(pUnit)
+	local iMemberCount = SimUnitSystem.GetVisMemberCount(pUnit);
+	print(pUnit.." Member Count: "..iMemberCount);
+	--Get all units in same tile
 	local unitX = unit:GetX();
 	local unitY = unit:GetY();
-	local unitList:table = Units.GetUnitsInPlotLayerID(unitX, unitY, MapLayers.ANY);
-	if unitList ~= nil then
-		print("Undead is stacking with some units...");
-		for i, pUnit in ipairs(unitList) do
-			local unitInfo:table = GameInfo.Units[pUnit:GetUnitType()];
-			local iMemberCount = SimUnitSystem.GetVisMemberCount(unit);
-			print("Stack "..tostring(i)..": "..unitInfo.UnitType.." Member Count: "..iMemberCount);
-			for j = 0, iMemberCount - 1, 1 do
-				local unitVisArtState = SimUnitSystem.GetVisMemberArtState(unit, j);
-				print("Getting member attachments...");
-				if (unitVisArtState ~= nil) then
-					print("Undead VosArtState got...");
-					local attName = nil;
-					if unitInfo.UnitType == "UNIT_GOLD_PINE_RESIN" then
-						attName = unitVisArtState.Attachments[5].Name;
-						print("Gold Pine Resin detected..."..attName);
-						--repeat
-							SimUnitSystem.ChangeVisMemberArtAttachment(unit, j, 4, 1);
-							attName = unitVisArtState.Attachments[5].Name;
-						--until (attName == "DS_Gold_Pine_Resin")
-						return;
-					else
-						attName = unitVisArtState.Attachments[5].Name;
-						print("Nothing detected, use default..."..attName);
-						--repeat
-							SimUnitSystem.ChangeVisMemberArtAttachment(unit, j, 4, 1);
-							attName = unitVisArtState.Attachments[5].Name;
-							print("Attachment Changed to..."..attName);
-						--until (attName == "DS_No_Equipment")
+	local unitList:table = Units.GetUnitsInPlotLayerID(unitX, unitY, MapLayers.ANY);	
+	
+	--Loop through members of Undead Unit
+	if iMemberCount > 0 then
+		for j = 0, iMemberCount - 1, 1 do
+			local unitVisArtState = SimUnitSystem.GetVisMemberArtState(pUnit, j);
+			print("Getting member attachments...");
+			if (unitVisArtState ~= nil) then
+				local attName = unitVisArtState.Attachments[5].Name;
+				local hasResinType = false;
+				print("Undead VosArtState got... Attachment 5 is: "..attName);
+				if unitList ~= nil then
+					print("Plot has units...");
+					for i, tUnit in ipairs(unitList) do
+						local tUnitInfo:table = GameInfo.Units[tUnit:GetUnitType()];
+						if tUnitInfo.UnitType == "UNIT_GOLD_PINE_RESIN" then
+							print("Gold Pine Resin detected...");
+							hasResinType = true;
+							--break;
+						end
+						--Reseved for other equipments
 					end
-					--End Switching Attachments
+					--End looping through units in same plot
+				end
+				if (attName ~= "DS_Gold_Pine_Resin") and (hasResinType == true) then
+					SimUnitSystem.ChangeVisMemberArtAttachment(unit, j, 4, 1);
+				else if (attName == "DS_Gold_Pine_Resin") and (hasResinType == false) then
+					SimUnitSystem.ChangeVisMemberArtAttachment(unit, j, 4, 1);	
 				end
 				--Unit has Vis Art State
 			end
 			--End looping through members
 		end
-		--End looping through units in same tile
-	else
-		print("Nothing in same tile, use default...");
-		for j = 0, iMemberCount - 1, 1 do
-			local unitVisArtState = SimUnitSystem.GetVisMemberArtState(unit, j);
-			attName = unitVisArtState.Attachments[5].Name;
-			print("Getting member attachments..."..attName);
-			--repeat
-				SimUnitSystem.ChangeVisMemberArtAttachment(unit, j, 4, 1);
-				attName = unitVisArtState.Attachments[5].Name;
-			--until (attName == "DS_No_Equipment")
-		end
-	end
-	--unitList isn't nil
+		--Unit has member
+	end		
+	--End of function
 end
 
 ----------Events----------
 Events.UnitSelectionChanged.Add(OnUnitSelectionChanged);
---Events.UnitAddedToMap.Add(SetUndeadAttachments);
---Events.UnitEnterFormation.Add(OnEnterFormation);
---Events.UnitExitFormation.Add(OnEnterFormation);
+Events.UnitAddedToMap.Add(SetUndeadAttachments);
+Events.UnitEnterFormation.Add(OnEnterFormation);
+Events.UnitExitFormation.Add(OnEnterFormation);
