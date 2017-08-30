@@ -89,6 +89,12 @@
     <Content Include="Assets\DIS_REL_Firelink_BF.ast">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Assets\DS_Gold_Pine_Resin.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\DS_No_Equipment.ast">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Assets\Equipments.ast">
       <SubType>Content</SubType>
     </Content>
