@@ -28,6 +28,7 @@
 		<Row Type="ABILITY_ESTUS_FLASK" Tag="CLASS_UNDEAD"/>
 		<Row Type="ABILITY_ITEM_ESCORT" Tag="CLASS_UNDEAD"/>
 
+		<Row Type="UNIT_UNDEAD" Tag="CLASS_RECON"/>
 		<Row Type="UNIT_UNDEAD" Tag="CLASS_UNDEAD"/>
 	</TypeTags>
 	<UnitAbilities>

@@ -7,6 +7,7 @@
 		<Row Type="UNIT_MIMIC" Kind="KIND_UNIT"/>
 		
 		<Row Type="ABILITY_ITEM_ESCORT" Kind="KIND_ABILITY"/>
+		<Row Type="ABILITY_MIMIC_EXP" Kind="KIND_ABILITY"/>
 	</Types>
 	<UnitAiInfos>
 		<Row UnitType="UNIT_MIMIC" AiType="UNITAI_SETTLE"/>
@@ -17,13 +18,14 @@
 		<Row CivUniqueUnitType="UNIT_MIMIC" ReplacesUnitType="UNIT_SCOUT"/>
 	</UnitReplaces>
 	<Units>
-		<Row UnitType="UNIT_MIMIC" BaseMoves="5" Cost="50" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_NAME" Description="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_DESCRIPTION" CostProgressionModel="COST_PROGRESSION_PREVIOUS_COPIES" CostProgressionParam1="25" PurchaseYield="YIELD_FAITH" MustPurchase="TRUE" PromotionClass="PROMOTION_CLASS_RECON" Maintenance="2" Combat="40" RangedCombat="1" Range="1" TraitType="TRAIT_CIVILIZATION_UNIT_MIMIC"/>
+		<Row UnitType="UNIT_MIMIC" BaseMoves="5" Cost="50" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_NAME" Description="LOC_TRAIT_CIVILIZATION_UNIT_MIMIC_DESCRIPTION" CostProgressionModel="COST_PROGRESSION_PREVIOUS_COPIES" CostProgressionParam1="25" PurchaseYield="YIELD_FAITH" MustPurchase="TRUE" PromotionClass="PROMOTION_CLASS_RECON" InitialLevel="2" Maintenance="2" Combat="45" RangedCombat="1" Range="1" TraitType="TRAIT_CIVILIZATION_UNIT_MIMIC"/>
 	</Units>
 	<Tags>
 		<Row Tag="CLASS_ITEM_DELIVER" Vocabulary="ABILITY_CLASS"/>
 	</Tags>
 	<TypeTags>
 		<Row Type="ABILITY_ITEM_ESCORT" Tag="CLASS_ITEM_DELIVER"/>
+		<Row Type="ABILITY_MIMIC_EXP" Tag="CLASS_ITEM_DELIVER"/>
 
 		<Row Type="UNIT_MIMIC" Tag="CLASS_RECON"/>
 		<Row Type="UNIT_MIMIC" Tag="CLASS_REVEAL_STEALTH"/>
@@ -31,18 +33,30 @@
 	</TypeTags>
 	<UnitAbilities>
 		<Row UnitAbilityType="ABILITY_ITEM_ESCORT" Name="LOC_ABILITY_ITEM_ESCORT_NAME" Description="LOC_ABILITY_ITEM_ESCORT_DESCRIPTION"/>
+		<Row UnitAbilityType="ABILITY_MIMIC_EXP" Name="LOC_ABILITY_MIMIC_EXP_NAME" Description="LOC_ABILITY_MIMIC_EXP_DESCRIPTION"/>
 	</UnitAbilities>
 	<UnitAbilityModifiers>
 		<Row>
 			<UnitAbilityType>ABILITY_ITEM_ESCORT</UnitAbilityType>
 			<ModifierId>ESCORT_MOBILITY_SHARED_MOVEMENT</ModifierId>
 		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_MIMIC_EXP</UnitAbilityType>
+			<ModifierId>MIMIC_EXP_NERF_BONUS</ModifierId>
+		</Row>
 	</UnitAbilityModifiers>
 	<Modifiers>
-		
+		<Row>
+			<ModifierId>MIMIC_EXP_NERF_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_UNIT_EXPERIENCE_MODIFIER</ModifierType>
+		</Row>
 	</Modifiers>
 	<ModifierArguments>
-		
+		<Row>
+			<ModifierId>MIMIC_EXP_NERF_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>-100</Value>
+		</Row>
 	</ModifierArguments>
 	<RequirementSets>
 		
