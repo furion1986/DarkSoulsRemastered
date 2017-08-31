@@ -62,8 +62,8 @@ function UpdateUndeadAttachment(pUnit)
 	local iMemberCount = SimUnitSystem.GetVisMemberCount(pUnit);
 	print(pUnit.." Member Count: "..iMemberCount);
 	--Get all units in same tile
-	local unitX = unit:GetX();
-	local unitY = unit:GetY();
+	local unitX = pUnit:GetX();
+	local unitY = pUnit:GetY();
 	local unitList:table = Units.GetUnitsInPlotLayerID(unitX, unitY, MapLayers.ANY);	
 	
 	--Loop through members of Undead Unit
