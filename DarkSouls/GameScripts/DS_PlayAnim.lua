@@ -90,7 +90,8 @@ function UpdateUndeadAttachment(pUnit)
 				end
 				if (attName ~= "DS_Gold_Pine_Resin") and (hasResinType == true) then
 					SimUnitSystem.ChangeVisMemberArtAttachment(unit, j, 4, 1);
-				else if (attName == "DS_Gold_Pine_Resin") and (hasResinType == false) then
+				elseif (attName == "DS_Gold_Pine_Resin") and (hasResinType == false) then
+					--Dame it!
 					SimUnitSystem.ChangeVisMemberArtAttachment(unit, j, 4, 1);	
 				end
 				--Unit has Vis Art State
