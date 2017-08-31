@@ -242,11 +242,7 @@ function UnitFlag.Initialize( self, playerID: number, unitID : number, flagType 
 		local pPlayer = Players[playerID];
 		local pUnit = pPlayer:GetUnits():FindID(unitID);
 		local unitInfo = GameInfo.Units[pUnit:GetUnitType()];
-		if (unitInfo.UnitType == "UNIT_UNDEAD" or unitInfo.UnitType == "UNIT_UNDEAD_RANGE") then 
-			self:SetUndeadColor();
-		else
-			self:SetColor();
-		end
+		self:SetColor();
 		self:SetInteractivity();
 		self:UpdateFlagType();
 		self:UpdateHealth();
@@ -467,6 +463,15 @@ end
 -- Set the flag color based on the player colors.
 function UnitFlag.SetColor( self )
 	local primaryColor, secondaryColor  = UI.GetPlayerColors( self.m_Player:GetID() );
+	
+	local unitID = self.m_UnitID;
+	local pPlayer = self.m_Player;
+	local pUnit = pPlayer:GetUnits():FindID(unitID);
+	local unitInfo = GameInfo.Units[pUnit:GetUnitType()];
+	
+	if (unitInfo.UnitType == "UNIT_UNDEAD" or unitInfo.UnitType == "UNIT_UNDEAD_RANGE") then 
+		secondaryColor = tonumber("#FFFFFF",16);
+	end
 	local darkerFlagColor	:number = DarkenLightenColor(primaryColor,(-85),255);
 	local brighterFlagColor :number = DarkenLightenColor(primaryColor,90,255);
 	local brighterIconColor :number = DarkenLightenColor(secondaryColor,20,255);
@@ -489,32 +494,6 @@ function UnitFlag.SetColor( self )
 	self.m_Instance.AirUnitListButton_Lighter:SetColor( brighterFlagColor );
 	self.m_Instance.AirUnitListButton_None:SetColor( primaryColor );
 	self.m_Instance.AirUnitListButtonIcon:SetColor( secondaryColor );
-end
-
-function UnitFlag.SetUndeadColor( self )
-	local primaryColor, secondaryColor  = UI.GetPlayerColors( self.m_Player:GetID() );
-	local darkerFlagColor	:number = DarkenLightenColor(primaryColor,(-85),255);
-	local brighterFlagColor :number = DarkenLightenColor(primaryColor,90,255);
-	local whiteIconColor :number = tonumber("#FFFFFF",16);
-	--local darkerIconColor	:number = DarkenLightenColor(secondaryColor,-30,255);
-        
-	self.m_Instance.FlagBase:SetColor( primaryColor );
-	self.m_Instance.UnitIcon:SetColor( whiteIconColor );
-	self.m_Instance.FlagBaseOutline:SetColor( primaryColor );
-	self.m_Instance.FlagBaseDarken:SetColor( darkerFlagColor );
-	self.m_Instance.FlagBaseLighten:SetColor( primaryColor );
-
-	self.m_Instance.FlagOver:SetColor( brighterFlagColor );
-	self.m_Instance.NormalSelect:SetColor( brighterFlagColor );
-	self.m_Instance.NormalSelectPulse:SetColor( brighterFlagColor );
-	self.m_Instance.HealthBarSelect:SetColor( primaryColor );
-
-	-- Set air unit list button color
-	--self.m_Instance.AirUnitListButton_Base:SetColor( primaryColor );
-	--self.m_Instance.AirUnitListButton_Darker:SetColor( darkerFlagColor );
-	--self.m_Instance.AirUnitListButton_Lighter:SetColor( brighterFlagColor );
-	--self.m_Instance.AirUnitListButton_None:SetColor( primaryColor );
-	--self.m_Instance.AirUnitListButtonIcon:SetColor( secondaryColor );
 end
 
 ------------------------------------------------------------------
