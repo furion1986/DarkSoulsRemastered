@@ -239,9 +239,6 @@ function UnitFlag.Initialize( self, playerID: number, unitID : number, flagType 
 		self.m_UnitID = unitID;
 
 		self:SetFlagUnitEmblem();
-		local pPlayer = Players[playerID];
-		local pUnit = pPlayer:GetUnits():FindID(unitID);
-		local unitInfo = GameInfo.Units[pUnit:GetUnitType()];
 		self:SetColor();
 		self:SetInteractivity();
 		self:UpdateFlagType();
@@ -469,16 +466,17 @@ function UnitFlag.SetColor( self )
 	local pUnit = pPlayer:GetUnits():FindID(unitID);
 	local unitInfo = GameInfo.Units[pUnit:GetUnitType()];
 	
-	if (unitInfo.UnitType == "UNIT_UNDEAD" or unitInfo.UnitType == "UNIT_UNDEAD_RANGE") then 
-		secondaryColor = tonumber("#FFFFFF",16);
-	end
 	local darkerFlagColor	:number = DarkenLightenColor(primaryColor,(-85),255);
 	local brighterFlagColor :number = DarkenLightenColor(primaryColor,90,255);
 	local brighterIconColor :number = DarkenLightenColor(secondaryColor,20,255);
 	local darkerIconColor	:number = DarkenLightenColor(secondaryColor,-30,255);
         
 	self.m_Instance.FlagBase:SetColor( primaryColor );
-	self.m_Instance.UnitIcon:SetColor( brighterIconColor );
+	if (unitInfo.UnitType == "UNIT_UNDEAD" or unitInfo.UnitType == "UNIT_UNDEAD_RANGE") then 
+		self.m_Instance.UnitIcon:SetColor( tonumber("#FFFFFF",16) );
+	else
+		self.m_Instance.UnitIcon:SetColor( brighterIconColor );
+	end
 	self.m_Instance.FlagBaseOutline:SetColor( primaryColor );
 	self.m_Instance.FlagBaseDarken:SetColor( darkerFlagColor );
 	self.m_Instance.FlagBaseLighten:SetColor( primaryColor );

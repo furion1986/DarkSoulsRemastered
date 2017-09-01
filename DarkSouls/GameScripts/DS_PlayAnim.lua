@@ -60,7 +60,7 @@ end
 
 function UpdateUndeadAttachment(pUnit)
 	local iMemberCount = SimUnitSystem.GetVisMemberCount(pUnit);
-	print(pUnit.." Member Count: "..iMemberCount);
+	print(tostring(pUnit).." Member Count: "..iMemberCount);
 	--Get all units in same tile
 	local unitX = pUnit:GetX();
 	local unitY = pUnit:GetY();
@@ -79,8 +79,8 @@ function UpdateUndeadAttachment(pUnit)
 					print("Plot has units...");
 					for i, tUnit in ipairs(unitList) do
 						local tUnitInfo:table = GameInfo.Units[tUnit:GetUnitType()];
-						if tUnitInfo.UnitType == "UNIT_GOLD_PINE_RESIN" then
-							print("Gold Pine Resin detected...");
+						if (tUnitInfo.UnitType == "UNIT_GOLD_PINE_RESIN") or (tUnitInfo.UnitType == "UNIT_DARK_PINE_RESIN") or (tUnitInfo.UnitType == "UNIT_PALE_PINE_RESIN") then
+							print("Pine Resin detected...");
 							hasResinType = true;
 							--break;
 						end
@@ -88,11 +88,14 @@ function UpdateUndeadAttachment(pUnit)
 					end
 					--End looping through units in same plot
 				end
+				print(hasResinType);
 				if (attName ~= "DS_Gold_Pine_Resin") and (hasResinType == true) then
-					SimUnitSystem.ChangeVisMemberArtAttachment(unit, j, 4, 1);
+					print("Swapping to Resin...");
+					SimUnitSystem.ChangeVisMemberArtAttachment(pUnit, j, 4, 1);
 				elseif (attName == "DS_Gold_Pine_Resin") and (hasResinType == false) then
 					--Dame it!
-					SimUnitSystem.ChangeVisMemberArtAttachment(unit, j, 4, 1);	
+					print("Swapping to No Resin...");
+					SimUnitSystem.ChangeVisMemberArtAttachment(pUnit, j, 4, 1);	
 				end
 				--Unit has Vis Art State
 			end
