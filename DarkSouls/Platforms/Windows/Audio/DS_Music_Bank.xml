@@ -37,9 +37,5 @@
 				<File Id="899964860"/>
 			</ReferencedStreamedFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX">
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
-		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

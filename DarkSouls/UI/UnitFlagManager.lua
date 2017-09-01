@@ -473,7 +473,7 @@ function UnitFlag.SetColor( self )
         
 	self.m_Instance.FlagBase:SetColor( primaryColor );
 	if (unitInfo.UnitType == "UNIT_UNDEAD" or unitInfo.UnitType == "UNIT_UNDEAD_RANGE") then 
-		self.m_Instance.UnitIcon:SetColor( tonumber("#FFFFFF",16) );
+		--self.m_Instance.UnitIcon:SetColor( tonumber("#FFFFFF",16) );
 	else
 		self.m_Instance.UnitIcon:SetColor( brighterIconColor );
 	end

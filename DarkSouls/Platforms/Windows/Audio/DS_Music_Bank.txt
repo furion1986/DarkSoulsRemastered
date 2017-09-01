@@ -11,6 +11,6 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	373350295	Game_Location			\Default Work Unit\Game_Location	
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	436128722	02 Firelink Shrine	C:\Users\Furion\Documents\WwiseProjects\DS_BGM\.cache\Windows\SFX\02 Firelink Shrine_4B8CC0C5.wem	436128722.wem	\Interactive Music Hierarchy\Default Work Unit\DS_Music\DS_Ancient_Era_Music\DS_Ancient_Era_Leader_Music\02 Firelink Shrine	
-	899964860	11 Gwynevere Princess of Sunlight	C:\Users\Furion\Documents\WwiseProjects\DS_BGM\.cache\Windows\SFX\11 Gwynevere, Princess of Sunlight_4B8CC0C5.wem	899964860.wem	\Interactive Music Hierarchy\Default Work Unit\DS_Music\DS_Industrial_Era_Music\DS_Industrial_Era_Leader_Music\11 Gwynevere Princess of Sunlight	
+	436128722	02 Firelink Shrine	C:\Users\Furion\Documents\WwiseProjects\DS_BGM\.cache\Windows\SFX\02 Firelink Shrine_4B8CC0C5.wem	436128722.wem	\Interactive Music Hierarchy\Default Work Unit\Dark_Souls\DS_Ancient_Era_Music\DS_Ancient_Era_Music_1\02 Firelink Shrine	
+	899964860	11 Gwynevere Princess of Sunlight	C:\Users\Furion\Documents\WwiseProjects\DS_BGM\.cache\Windows\SFX\11 Gwynevere, Princess of Sunlight_4B8CC0C5.wem	899964860.wem	\Interactive Music Hierarchy\Default Work Unit\Dark_Souls\DS_Industrial_Era_Music\DS_Industrial_Era_Music_1\11 Gwynevere Princess of Sunlight	
 
