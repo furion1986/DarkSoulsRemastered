@@ -8,6 +8,13 @@ include( "Civ6Common" );
 
 print("Loaded")
 
+function GetDSUnitFlag(playerID:number, unitID:number)
+	if m_UnitFlagInstances[playerID]==nil then
+		return nil;
+	end
+	return m_UnitFlagInstances[playerID][unitID];
+end
+
 function OnUnitSelectionChanged(playerID, unitId, locationX, locationY, locationZ, isSelected, isEditable)
 	if (isSelected) then
 		local pPlayer = Players[playerID];

@@ -460,10 +460,7 @@ end
 -- Set the flag color based on the player colors.
 function UnitFlag.SetColor( self )
 	local primaryColor, secondaryColor  = UI.GetPlayerColors( self.m_Player:GetID() );
-	
-	local unitID = self.m_UnitID;
-	local pPlayer = self.m_Player;
-	local pUnit = pPlayer:GetUnits():FindID(unitID);
+	local pUnit = self.m_Player:GetUnits():FindID(self.m_UnitID);
 	local unitInfo = GameInfo.Units[pUnit:GetUnitType()];
 	
 	local darkerFlagColor	:number = DarkenLightenColor(primaryColor,(-85),255);
@@ -473,7 +470,8 @@ function UnitFlag.SetColor( self )
         
 	self.m_Instance.FlagBase:SetColor( primaryColor );
 	if (unitInfo.UnitType == "UNIT_UNDEAD" or unitInfo.UnitType == "UNIT_UNDEAD_RANGE") then 
-		--self.m_Instance.UnitIcon:SetColor( tonumber("#FFFFFF",16) );
+		print("Force changing undead icon colors.");
+		self.m_Instance.UnitIcon:SetColor( tonumber("#FFFFFF",16) );
 	else
 		self.m_Instance.UnitIcon:SetColor( brighterIconColor );
 	end
