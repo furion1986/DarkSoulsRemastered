@@ -350,7 +350,7 @@
 		<Row>
 			<ModifierId>POISON_WEAPON_VS_WOUNDER_UNITS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>POISON_WEAPON_VS_WOUNDER_UNITS_MODIFIER</ModifierId>
@@ -360,7 +360,7 @@
 		<Row>
 			<ModifierId>DRAGONSLAYER_ARROW_ATTACK_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>DRAGONSLAYER_ARROW_ATTACK_BONUS_MODIFIER</ModifierId>
@@ -370,12 +370,12 @@
 		<Row>
 			<ModifierId>GOUGHS_GREAT_ARROW_PUSH_BACK_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>MAGIC_WEAPON_VS_DISTRICT_DEFENSES</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>MAGIC_WEAPON_VS_DISTRICT_DEFENSES_MODIFIER</ModifierId>
@@ -386,7 +386,7 @@
 		<Row>
 			<ModifierId>GOLD_PINE_RESIN_ATTACK_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>GOLD_PINE_RESIN_ATTACK_BONUS_MODIFIER</ModifierId>

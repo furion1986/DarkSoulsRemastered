@@ -15,7 +15,7 @@
 			<Text>Heirs of Cinder</Text>
 		</Row>
 		<Row Tag="LOC_TRAIT_CIVILIZATION_CITY_DEFERENCE_DESCRIPTION">
-			<Text>Can not build any military unit, instead you will always own 6 Undead Units. [NEWLINE]City's [ICON_Strength] Defense and [ICON_Ranged] Ranged Strength will increase with you Technology.[NEWLINE]***PLEASE NOTICE THAT RANGE UNDEAD UNIT CAN NOT ATTACK UNTIL EQUIPPED WITH RANGE WEAPON***</Text>
+			<Text>Can not build any military unit, instead you will always own 6 Undead Units. [NEWLINE]City's [ICON_Strength] Defense and [ICON_Ranged] Ranged Strength will increase with you Technology.[NEWLINE]***PLEASE NOTICE THAT UNDEAD UNIT CAN NOT ATTACK UNTIL EQUIPPED WITH RANGE WEAPON***</Text>
 		</Row>
 		<Row Tag="LOC_TRAIT_CIVILIZATION_DISTRICT_BONFIRE_NAME">
 			<Text>Dark Souls' unique district: Firelink Shrine</Text>
@@ -53,12 +53,6 @@
 		</Row>
 		<Row Tag="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_DESCRIPTION">
 			<Text>The Chosen Undead. [NEWLINE]Soul: When defeating an enemy unit, gain [ICON_Faith] Faith equal to 50% that unit's base [ICON_Strength] Combat Strength. [NEWLINE]Undead: Will resurrect at player's capital city on the next turn once they get killed. [NEWLINE]Equipment: Can be strengthened by Equipments and escorted units will enjoy the same Movement speed with Undead.</Text>
-		</Row>
-		<Row Tag="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE_NAME">
-			<Text>Undead Range</Text>
-		</Row>
-		<Row Tag="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE_DESCRIPTION">
-			<Text>The Chosen Undead. Can not attack without range equipments. [NEWLINE]Soul: When defeating an enemy unit, gain [ICON_Faith] Faith equal to 50% that unit's base [ICON_Strength] Combat Strength. [NEWLINE]Undead: Will resurrect at player's capital city on the next turn once they get killed. [NEWLINE]Equipment: Can be strengthened by Equipments; escorted units will enjoy the same Movement speed with Undead.</Text>
 		</Row>
 
 		<!--Leader-->
@@ -250,7 +244,8 @@
 		</Row>
 		<Row Tag="LOC_UNIT_SHORT_BOW_DESCRIPTION">
 			<Text>
-				5 [ICON_Strength] Combat Strength Range Weapon, +1 [ICON_Range] Range.
+				15 [ICON_Strength] Combat Strength Range Weapon, +1 [ICON_Range] Range.
+				[NEWLINE]
 				[NEWLINE][NEWLINE]Small bow. Standard projectile weapon. Range Undeads need Equip to use.
 			</Text>
 		</Row>
@@ -259,7 +254,7 @@
 		</Row>
 		<Row Tag="LOC_UNIT_COMPOSITE_BOW_DESCRIPTION">
 			<Text>
-				20 [ICON_Strength] Combat Strength Range Weapon, +1 [ICON_Range] Range.
+				30 [ICON_Strength] Combat Strength Range Weapon, +1 [ICON_Range] Range.
 				[NEWLINE][NEWLINE]Bow born from the soul of the Dark Sun Gwyndolin, Darkmoon deity who watches over the abandoned city of Gods, Anor Londo.
 				[NEWLINE]This golden bow is imbued with powerful magic and is most impressive with Moonlight Arrows.
 			</Text>
@@ -278,7 +273,7 @@
 		</Row>
 		<Row Tag="LOC_UNIT_GOUGHS_GREATBOW_DESCRIPTION">
 			<Text>
-				65 [ICON_Strength] Combat Strength Range Weapon, +5 [ICON_Range] Range. +20 [ICON_Ranged] Ranged Strength when attacking.
+				70 [ICON_Strength] Combat Strength Range Weapon, +5 [ICON_Range] Range. +20 [ICON_Ranged] Ranged Strength when attacking.
 				[NEWLINE][NEWLINE]Greatbow used by Hawkeye Gough, of Lord Gwyn's Four Knights, for dragon slaying.
 				[NEWLINE]This bow is larger than even those used by the famed Dragonslayers. Only their leader, Gough, had the strength to handle it.
 			</Text>
@@ -288,7 +283,7 @@
 		</Row>
 		<Row Tag="LOC_UNIT_GOLD_TRACER_DESCRIPTION">
 			<Text>
-				20 [ICON_Strength] Combat Strength Range Weapon, +1 [ICON_Range] Range. +10 [ICON_Ranged] Ranged Strength when attacking. Only Ciaran Knows the True Power behind this Weapon.
+				25 [ICON_Strength] Combat Strength Range Weapon, +1 [ICON_Range] Range. +10 [ICON_Ranged] Ranged Strength when attacking. Only Ciaran Knows the True Power behind this Weapon.
 				[NEWLINE][NEWLINE]Curved sword used by the Lord's Blade Ciaran, one of Gwyn's Four Knights.
 				[NEWLINE]Ciaran brandishes her sword in a mesmerizing dance, etching the darkness with dire streaks of gold.
 			</Text>

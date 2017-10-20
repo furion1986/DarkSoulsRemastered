@@ -8,24 +8,35 @@
 		<Row Type="ABILITY_SWITCH_RANGE_ATTACK" Kind="KIND_ABILITY"/>
 		<Row Type="ABILITY_LONG_RANGE_ATTACK" Kind="KIND_ABILITY"/>
 		<Row Type="ABILITY_GIVE_ITEM" Kind="KIND_ABILITY"/>
+		<Row Type="ABILITY_DERANGE" Kind="KIND_ABILITY"/>
+		<Row Type="ABILITY_DECOMBAT" Kind="KIND_ABILITY"/>
+		<Row Type="ABILITY_MELEE_DECOMBAT" Kind="KIND_ABILITY"/>
 	</Types>
 	<Tags>
 		<Row Tag="CLASS_TOO_HEAVY" Vocabulary="ABILITY_CLASS"/>
 		<Row Tag="CLASS_RANGE_ATTACK" Vocabulary="ABILITY_CLASS"/>
 		<Row Tag="CLASS_LONG_RANGE_ATTACK" Vocabulary="ABILITY_CLASS"/>
 		<Row Tag="CLASS_GIVE_ITEM" Vocabulary="ABILITY_CLASS"/>
+		<Row Tag="CLASS_DERANGE" Vocabulary="ABILITY_CLASS"/>
+		<Row Tag="CLASS_DECOMBAT" Vocabulary="ABILITY_CLASS"/>
 	</Tags>
 	<TypeTags>
 		<Row Type="ABILITY_TOO_HEAVY" Tag="CLASS_TOO_HEAVY"/>
 		<Row Type="ABILITY_SWITCH_RANGE_ATTACK" Tag="CLASS_RANGE_ATTACK"/>
 		<Row Type="ABILITY_LONG_RANGE_ATTACK" Tag="CLASS_LONG_RANGE_ATTACK"/>
 		<Row Type="ABILITY_GIVE_ITEM" Tag="CLASS_GIVE_ITEM"/>
+		<Row Type="ABILITY_DERANGE" Tag="CLASS_DERANGE"/>
+		<Row Type="ABILITY_DECOMBAT" Tag="CLASS_DECOMBAT"/>
+		<Row Type="ABILITY_MELEE_DECOMBAT" Tag="CLASS_DECOMBAT"/>
 	</TypeTags>
 	<UnitAbilities>
 		<Row UnitAbilityType="ABILITY_TOO_HEAVY" Name="LOC_ABILITY_TOO_HEAVY_NAME" Description="LOC_ABILITY_TOO_HEAVY_DESCRIPTION"/>
 		<Row UnitAbilityType="ABILITY_SWITCH_RANGE_ATTACK" Name="LOC_ABILITY_SWITCH_RANGE_ATTACK_NAME" Description="LOC_ABILITY_SWITCH_RANGE_ATTACK_DESCRIPTION"/>
 		<Row UnitAbilityType="ABILITY_LONG_RANGE_ATTACK" Name="LOC_ABILITY_LONG_RANGE_ATTACK_NAME" Description="LOC_ABILITY_LONG_RANGE_ATTACK_DESCRIPTION"/>
 		<Row UnitAbilityType="ABILITY_GIVE_ITEM" Name="LOC_ABILITY_GIVE_ITEM_NAME" Description="LOC_ABILITY_GIVE_ITEM_DESCRIPTION"/>
+		<Row UnitAbilityType="ABILITY_DERANGE" Name="LOC_ABILITY_DERANGE_NAME" Description="LOC_ABILITY_DERANGE_DESCRIPTION"/>
+		<Row UnitAbilityType="ABILITY_DECOMBAT" Name="LOC_ABILITY_DECOMBAT_NAME" Description="LOC_ABILITY_DECOMBAT_DESCRIPTION"/>
+		<Row UnitAbilityType="ABILITY_MELEE_DECOMBAT" Name="LOC_ABILITY_MELEE_DECOMBAT_NAME" Description="LOC_ABILITY_MELEE_DECOMBAT_DESCRIPTION"/>
 	</UnitAbilities>
 	<UnitAbilityModifiers>
 		<Row>
@@ -44,6 +55,18 @@
 			<UnitAbilityType>ABILITY_GIVE_ITEM</UnitAbilityType>
 			<ModifierId>UNDEAD_GIVE_ITEM_BONUS</ModifierId>
 		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_DERANGE</UnitAbilityType>
+			<ModifierId>UNDEAD_DERANGE_BONUS</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_DECOMBAT</UnitAbilityType>
+			<ModifierId>UNDEAD_DECOMBAT_BONUS</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_MELEE_DECOMBAT</UnitAbilityType>
+			<ModifierId>UNDEAD_MELEE_DECOMBAT_BONUS</ModifierId>
+		</Row>
 	</UnitAbilityModifiers>
 	<Modifiers>
 		<Row>
@@ -58,7 +81,7 @@
 		<Row>
 			<ModifierId>SWITCH_RANGE_ATTACK_BONUS_RANGE</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>SWITCH_RANGE_ATTACK_BONUS_RANGE_MODIFIER</ModifierId>
@@ -67,7 +90,7 @@
 		<Row>
 			<ModifierId>LONG_RANGE_ATTACK_BONUS_RANGE</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>LONG_RANGE_ATTACK_BONUS_RANGE_MODIFIER</ModifierId>
@@ -77,6 +100,35 @@
 			<ModifierId>UNDEAD_GIVE_ITEM_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT</ModifierType>
 			<SubjectRequirementSetId>UNIT_UNDEAD_ITEM_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_DERANGE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_DERANGE_BONUS_MODIFIER</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_ATTACK_RANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_DECOMBAT_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_DECOMBAT_BONUS_MODIFIER</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<SubjectRequirementSetId>UNIT_WEAK_WHEN_DEFENDING_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_MELEE_DECOMBAT_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_MELEE_DECOMBAT_BONUS_MODIFIER</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_COMBAT_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 	</Modifiers>
 	<ModifierArguments>
@@ -115,5 +167,39 @@
 			<Name>Amount</Name>
 			<Value>1</Value>
 		</Row>
+		<Row>
+			<ModifierId>UNDEAD_DERANGE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>UNDEAD_DERANGE_BONUS_MODIFIER</Value>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_DERANGE_BONUS_MODIFIER</ModifierId>
+			<Name>Amount</Name>
+			<Value>-2</Value>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_DECOMBAT_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>UNDEAD_DECOMBAT_BONUS_MODIFIER</Value>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_DECOMBAT_BONUS_MODIFIER</ModifierId>
+			<Name>Amount</Name>
+			<Value>-20</Value>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_MELEE_DECOMBAT_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>UNDEAD_MELEE_DECOMBAT_BONUS_MODIFIER</Value>
+		</Row>
+		<Row>
+			<ModifierId>UNDEAD_MELEE_DECOMBAT_BONUS_MODIFIER</ModifierId>
+			<Name>Amount</Name>
+			<Value>-30</Value>
+		</Row>
 	</ModifierArguments>
+	<ModifierStrings>
+		<Row ModifierId="UNDEAD_DECOMBAT_BONUS_MODIFIER" Context="Preview" Text="LOC_DECOMBAT_BONUS_BONUS"/>
+		<Row ModifierId="UNDEAD_MELEE_DECOMBAT_BONUS_MODIFIER" Context="Preview" Text="LOC_MELEE_DECOMBAT_BONUS_BONUS"/>
+	</ModifierStrings>
 </GameData>

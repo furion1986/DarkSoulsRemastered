@@ -220,11 +220,15 @@
 		<!--Bow-->
 		<Row Type="UNIT_SHORT_BOW" Tag="CLASS_SHORT_BOW"/>
 		<Row Type="UNIT_SHORT_BOW" Tag="CLASS_RANGE_ATTACK"/>
+		<Row Type="UNIT_SHORT_BOW" Tag="CLASS_DECOMBAT"/>
 		<Row Type="UNIT_COMPOSITE_BOW" Tag="CLASS_COMPOSITE_BOW"/>
 		<Row Type="UNIT_COMPOSITE_BOW" Tag="CLASS_RANGE_ATTACK"/>
+		<Row Type="UNIT_COMPOSITE_BOW" Tag="CLASS_DECOMBAT"/>
 		<Row Type="UNIT_DRAGONSLAYER_GREATBOW" Tag="CLASS_DRAGONSLAYER_GREATBOW"/>
 		<Row Type="UNIT_DRAGONSLAYER_GREATBOW" Tag="CLASS_LONG_RANGE_ATTACK"/>
+		<Row Type="UNIT_DRAGONSLAYER_GREATBOW" Tag="CLASS_DECOMBAT"/>
 		<Row Type="UNIT_GOUGHS_GREATBOW" Tag="CLASS_GOUGHS_GREATBOW"/>
+		<Row Type="UNIT_GOUGHS_GREATBOW" Tag="CLASS_DECOMBAT"/>
 		<Row Type="UNIT_GOLD_TRACER" Tag="CLASS_GOLD_TRACER"/>
 		<Row Type="UNIT_GOLD_TRACER" Tag="CLASS_RANGE_ATTACK"/>
 		<!--Special-->
@@ -235,11 +239,15 @@
 		<Row Type="UNIT_COVENANT_OF_ARTORIAS" Tag="CLASS_COVENANT_OF_ARTORIAS"/>
 		<!--Ability-->
 		<Row Type="ABILITY_SPEAR_ANTI_CAVALRY" Tag="CLASS_SPEAR_WEAPON"/>
+		<Row Type="ABILITY_DERANGE" Tag="CLASS_SPEAR_WEAPON"/>
 		<Row Type="ABILITY_HAMMER_ANTI_LANCER" Tag="CLASS_HAMMER_WEAPON"/>
+		<Row Type="ABILITY_DERANGE" Tag="CLASS_HAMMER_WEAPON"/>
 		<Row Type="ABILITY_GREATSWORD_ANTI_MELEE" Tag="CLASS_GREATSWORD_WEAPON"/>
 		<Row Type="ABILITY_TOO_HEAVY" Tag="CLASS_GREATSWORD_WEAPON"/>
 		<Row Type="ABILITY_GREATSWORD_ENDURE" Tag="CLASS_GREATSWORD_WEAPON"/>
+		<Row Type="ABILITY_DERANGE" Tag="CLASS_GREATSWORD_WEAPON"/>
 		<Row Type="ABILITY_SWORD_ANTI_RANGE" Tag="CLASS_SWORD_WEAPON"/>
+		<Row Type="ABILITY_DERANGE" Tag="CLASS_SWORD_WEAPON"/>
 		<!--Spear-->
 		<Row Type="ABILITY_NORMAL_SPEAR" Tag="CLASS_NORMAL_SPEAR"/>
 		<Row Type="ABILITY_WINGED_SPEAR" Tag="CLASS_WINGED_SPEAR"/>
@@ -560,7 +568,7 @@
 		<Row>
 			<ModifierId>SPEAR_ANTI_CAVALRY_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>SPEAR_ANTI_CAVALRY_BONUS_MODIFIER</ModifierId>
@@ -570,7 +578,7 @@
 		<Row>
 			<ModifierId>HAMMER_ANTI_LANCER_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>HAMMER_ANTI_LANCER_BONUS_MODIFIER</ModifierId>
@@ -580,12 +588,12 @@
 		<Row>
 			<ModifierId>HAMMER_PUSH_BACK_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>GREATSWORD_ANTI_MELEE_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>GREATSWORD_ANTI_MELEE_BONUS_MODIFIER</ModifierId>
@@ -595,12 +603,12 @@
 		<Row>
 			<ModifierId>GREATSWORD_ENDURE_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>SWORD_ANTI_RANGE_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>SWORD_ANTI_RANGE_BONUS_MODIFIER</ModifierId>
@@ -611,7 +619,7 @@
 		<Row>
 			<ModifierId>NORMAL_SPEAR_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>NORMAL_SPEAR_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -620,7 +628,7 @@
 		<Row>
 			<ModifierId>WINGED_SPEAR_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>WINGED_SPEAR_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -629,7 +637,7 @@
 			<Row>
 			<ModifierId>SILVER_KNIGHT_SPEAR_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>SILVER_KNIGHT_SPEAR_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -638,7 +646,7 @@
 		<Row>
 			<ModifierId>DRAGONSLAYER_SPEAR_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>DRAGONSLAYER_SPEAR_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -647,7 +655,7 @@
 		<Row>
 			<ModifierId>DRAGONSLAYER_SPEAR_ANTI_DEFERENCE_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>DRAGONSLAYER_SPEAR_ANTI_DEFERENCE_BONUS_MODIFIER</ModifierId>
@@ -658,7 +666,7 @@
 		<Row>
 			<ModifierId>NORMAL_CLUB_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>NORMAL_CLUB_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -667,7 +675,7 @@
 		<Row>
 			<ModifierId>NORMAL_MACE_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>NORMAL_MACE_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -676,7 +684,7 @@
 		<Row>
 			<ModifierId>DEMONS_GREAT_HAMMER_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>DEMONS_GREAT_HAMMER_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -685,7 +693,7 @@
 		<Row>
 			<ModifierId>DRAGON_TOOTH_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>DRAGON_TOOTH_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -694,7 +702,7 @@
 		<Row>
 			<ModifierId>DRAGON_TOOTH_ANTI_CITY_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>DRAGON_TOOTH_ANTI_CITY_BONUS_MODIFIER</ModifierId>
@@ -705,7 +713,7 @@
 		<Row>
 			<ModifierId>CLAYMORE_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>CLAYMORE_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -714,7 +722,7 @@
 		<Row>
 			<ModifierId>ZWEIHANDER_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>ZWEIHANDER_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -723,7 +731,7 @@
 		<Row>
 			<ModifierId>BLACK_KNIGHT_SWORD_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>BLACK_KNIGHT_SWORD_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -732,7 +740,7 @@
 		<Row>
 			<ModifierId>ABYSS_GREATSWORD_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>ABYSS_GREATSWORD_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -751,7 +759,7 @@
 		<Row>
 			<ModifierId>SHORT_SWORD_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>SHORT_SWORD_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -760,7 +768,7 @@
 		<Row>
 			<ModifierId>SUNLIGHT_STRAIGHT_SWORD_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>SUNLIGHT_STRAIGHT_SWORD_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -769,7 +777,7 @@
 		<Row>
 			<ModifierId>SILVER_KNIGHT_STRAIGHT_SWORD_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>SILVER_KNIGHT_STRAIGHT_SWORD_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -778,7 +786,7 @@
 		<Row>
 			<ModifierId>ASTORAS_STRAIGHT_SWORD_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_MELEE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>ASTORAS_STRAIGHT_SWORD_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -797,7 +805,7 @@
 		<Row>
 			<ModifierId>SHORT_BOW_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>SHORT_BOW_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -806,7 +814,7 @@
 		<Row>
 			<ModifierId>COMPOSITE_BOW_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>COMPOSITE_BOW_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -815,7 +823,7 @@
 		<Row>
 			<ModifierId>DRAGONSLAYER_GREATBOW_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>DRAGONSLAYER_GREATBOW_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -824,7 +832,7 @@
 		<Row>
 			<ModifierId>GOUGHS_GREATBOW_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>GOUGHS_GREATBOW_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -833,7 +841,7 @@
 		<Row>
 			<ModifierId>GOUGHS_GREATBOW_RANGE_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>GOUGHS_GREATBOW_RANGE_BONUS_MODIFIER</ModifierId>
@@ -842,7 +850,7 @@
 		<Row>
 			<ModifierId>GOUGHS_GREATBOW_ATTACK_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>GOUGHS_GREATBOW_ATTACK_BONUS_MODIFIER</ModifierId>
@@ -852,7 +860,7 @@
 		<Row>
 			<ModifierId>GOLD_TRACER_COMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>GOLD_TRACER_COMBAT_BONUS_MODIFIER</ModifierId>
@@ -861,7 +869,7 @@
 		<Row>
 			<ModifierId>GOLD_TRACER_ATTACK_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>GOLD_TRACER_ATTACK_BONUS_MODIFIER</ModifierId>
@@ -871,7 +879,7 @@
 		<Row>
 			<ModifierId>LORDS_BLADE_ATTACK_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>LORDS_BLADE_ATTACK_BONUS_MODIFIER</ModifierId>
@@ -910,12 +918,12 @@
 		<Row>
 			<ModifierId>DARK_SILVER_TRACER_INVISIABLE_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>DARK_SILVER_TRACER_ATTACK_VS_WOUNDER_UNITS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>DARK_SILVER_TRACER_ATTACK_VS_WOUNDER_UNITS_MODIFIER</ModifierId>
@@ -1187,7 +1195,7 @@
 		<Row>
 			<ModifierId>SHORT_BOW_COMBAT_BONUS_MODIFIER</ModifierId>
 			<Name>Amount</Name>
-			<Value>10</Value>
+			<Value>15</Value>
 		</Row>
 		<Row>
 			<ModifierId>COMPOSITE_BOW_COMBAT_BONUS</ModifierId>
@@ -1197,7 +1205,7 @@
 		<Row>
 			<ModifierId>COMPOSITE_BOW_COMBAT_BONUS_MODIFIER</ModifierId>
 			<Name>Amount</Name>
-			<Value>20</Value>
+			<Value>30</Value>
 		</Row>
 		<Row>
 			<ModifierId>DRAGONSLAYER_GREATBOW_COMBAT_BONUS</ModifierId>
@@ -1207,7 +1215,7 @@
 		<Row>
 			<ModifierId>DRAGONSLAYER_GREATBOW_COMBAT_BONUS_MODIFIER</ModifierId>
 			<Name>Amount</Name>
-			<Value>45</Value>
+			<Value>50</Value>
 		</Row>
 		<Row>
 			<ModifierId>GOUGHS_GREATBOW_COMBAT_BONUS</ModifierId>
@@ -1217,7 +1225,7 @@
 		<Row>
 			<ModifierId>GOUGHS_GREATBOW_COMBAT_BONUS_MODIFIER</ModifierId>
 			<Name>Amount</Name>
-			<Value>65</Value>
+			<Value>70</Value>
 		</Row>
 		<Row>
 			<ModifierId>GOUGHS_GREATBOW_RANGE_BONUS</ModifierId>
@@ -1247,7 +1255,7 @@
 		<Row>
 			<ModifierId>GOLD_TRACER_COMBAT_BONUS_MODIFIER</ModifierId>
 			<Name>Amount</Name>
-			<Value>20</Value>
+			<Value>25</Value>
 		</Row>
 		<Row>
 			<ModifierId>GOLD_TRACER_ATTACK_BONUS</ModifierId>

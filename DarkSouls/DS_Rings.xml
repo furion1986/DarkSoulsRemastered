@@ -275,7 +275,7 @@
 		<Row>
 			<ModifierId>BELLOWING_DRAGONCREST_RING_RANGE_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_RANGE_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>BELLOWING_DRAGONCREST_RING_RANGE_BONUS_MODIFIER</ModifierId>

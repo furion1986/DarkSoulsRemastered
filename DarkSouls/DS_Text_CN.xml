@@ -18,7 +18,7 @@
 			<Text>薪火之承</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_CITY_DEFERENCE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>无法训练任何军事单位，相对的你会拥有6个不死人单位。[NEWLINE]城市 [ICON_Strength] 防御和 [ICON_Ranged] 远程战斗力会随着科技进程提高。[NEWLINE]***请注意：远程不死人初始射程为0，在装备远程武器之前无法攻击***</Text>
+			<Text>无法训练任何军事单位，相对的你会拥有6个不死人单位。[NEWLINE]城市 [ICON_Strength] 防御和 [ICON_Ranged] 远程战斗力会随着科技进程提高。[NEWLINE]***请注意：不死人初始射程为0，只有装备远程武器才能使用远程攻击***</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DISTRICT_BONFIRE_NAME" Language="zh_Hans_CN">
 			<Text>特色区域：传火祭祀场</Text>
@@ -56,12 +56,6 @@
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>被选中的不死人。拥有特殊晋升树的近战单位。[NEWLINE]不死人: 死亡后将于首都重生。[NEWLINE]魂: 消灭敌方军事单位时获得等同于其50%战斗力的 [ICON_Faith] 信仰。[NEWLINE]装备: 可以通过装备不同的物品提高自身能力，护送的单位享受与不死人相同的移动力。</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE_NAME" Language="zh_Hans_CN">
-			<Text>不死人(远程)</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_UNIT_UNDEAD_RANGE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>被选中的不死人。拥有特殊晋升树的远程单位。初始射程为0，在装备任何远程武器之前无法攻击。[NEWLINE]不死人: 死亡后将于首都重生。[NEWLINE]魂: 消灭敌方军事单位时获得等同于其50%战斗力的 [ICON_Faith] 信仰。[NEWLINE]装备: 可以通过装备不同的物品提高自身能力，护送的单位享受与不死人相同的移动力。</Text>
 		</Replace>
 
 		<!--Leader-->
@@ -253,7 +247,8 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_SHORT_BOW_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>
-				5 [ICON_Strength] 战斗力的远程武器，+1 [ICON_Range] 射程。
+				15 [ICON_Strength] 战斗力的远程武器，+1 [ICON_Range] 射程。
+				[NEWLINE]弓系武器防御时 -20 [ICON_Ranged] 战斗力，发起近战攻击时-30 [ICON_Ranged] 战斗力。
 				[NEWLINE][NEWLINE]小型的弓，標準射擊武器。遠程不死人要裝備武器才能射。
 			</Text>
 		</Replace>
@@ -262,7 +257,8 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_COMPOSITE_BOW_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>
-				20 [ICON_Strength] 战斗力的远程武器，+1 [ICON_Range] 射程。
+				30 [ICON_Strength] 战斗力的远程武器，+1 [ICON_Range] 射程。
+				[NEWLINE]弓系武器防御时 -20 [ICON_Ranged] 战斗力，发起近战攻击时-30 [ICON_Ranged] 战斗力。
 				[NEWLINE][NEWLINE]改造得更重視威力的複合型弓，力氣的要求比一般的弓更高。
 				[NEWLINE]但是箭的射程比較短，	不太適合用在遠距離的狙擊。
 			</Text>
@@ -273,6 +269,7 @@
 		<Replace Tag="LOC_UNIT_DRAGONSLAYER_GREATBOW_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>
 				50 [ICON_Strength] 战斗力的远程武器，+2 [ICON_Range] 射程。
+				[NEWLINE]弓系武器防御时 -20 [ICON_Ranged] 战斗力，发起近战攻击时-30 [ICON_Ranged] 战斗力。
 				[NEWLINE][NEWLINE]葛溫王四騎士之一，「鷹眼」戈夫所率獵龍隊使用的大弓。
 			</Text>
 		</Replace>
@@ -281,7 +278,8 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_GOUGHS_GREATBOW_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>
-				65 [ICON_Strength] 战斗力的远程武器，+5 [ICON_Range] 射程。攻击时 +20 [ICON_Ranged] 战斗力。
+				70 [ICON_Strength] 战斗力的远程武器，+5 [ICON_Range] 射程。攻击时 +20 [ICON_Ranged] 战斗力。
+				[NEWLINE]弓系武器防御时 -20 [ICON_Ranged] 战斗力，发起近战攻击时-30 [ICON_Ranged] 战斗力。
 				[NEWLINE][NEWLINE]葛溫王四騎士之一，「鷹眼」戈夫所用的獵龍巨弓。
 				[NEWLINE]在野時就是戈夫的使用武器，比獵龍隊使用的大弓還要巨大，必須擁有高人臂力才能拉開這張弓。
 			</Text>
@@ -291,7 +289,7 @@
 		</Replace>
 		<Replace Tag="LOC_UNIT_GOLD_TRACER_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>
-				20 [ICON_Strength] 战斗力的远程武器，+1 [ICON_Range] 射程。攻击时 +10 [ICON_Ranged] 战斗力。只有基亞藍知道如何引出它真正的力量。
+				25 [ICON_Strength] 战斗力的刺杀武器，+1 [ICON_Range] 射程。攻击时 +10 [ICON_Ranged] 战斗力。只有基亞藍知道如何引出它真正的力量。
 				[NEWLINE][NEWLINE]葛溫大王四騎士之一「王的先鋒(王の刃)」基亞藍使用的黃金曲劍，細小的突刺帶有放血效果。
 				[NEWLINE]她的劍技宛若舞蹈，在黑暗中描繪災厄的金色殘影。
 			</Text>
@@ -320,6 +318,12 @@
 		</Replace>
 		<Replace Tag="LOC_SILVER_TRACER_ATTACK_VS_WOUNDER_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>攻击受伤单位时 +{1_Amount} [ICON_Ranged] 战斗力。</Text>
+		</Replace>
+		<Replace Tag="LOC_DECOMBAT_BONUS_BONUS" Language="zh_Hans_CN">
+			<Text>弓系武器防御 {1_Amount} [ICON_Ranged] 战斗力。</Text>
+		</Replace>
+		<Replace Tag="LOC_MELEE_DECOMBAT_BONUS_BONUS" Language="zh_Hans_CN">
+			<Text>弓系武器发起近战 {1_Amount} [ICON_Ranged] 战斗力。</Text>
 		</Replace>
 		<!--Support_Equipments-->
 		<Replace Tag="LOC_UNIT_SMALL_SHIELD_NAME" Language="zh_Hans_CN">

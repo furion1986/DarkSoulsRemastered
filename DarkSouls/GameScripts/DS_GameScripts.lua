@@ -17,20 +17,11 @@ function UndeadResurrection(playerId)
 				if unitInfo.UnitType == "UNIT_UNDEAD" then
 					UDNumber = UDNumber +1;
 				end
-				if unitInfo.UnitType == "UNIT_UNDEAD_RANGE" then
-					UDRNumber = UDRNumber +1;
-				end
 			end
-			if UDNumber < 4 then
-				UDNumber = 3 - UDNumber;
+			if UDNumber < 6 then
+				UDNumber = 5 - UDNumber;
 				for i = 0, UDNumber, 1 do
 					pPlayer:GetUnits():Create(GameInfo.Units["UNIT_UNDEAD"].Index, capitalCity:GetX(), capitalCity:GetY());
-				end
-			end
-			if UDRNumber < 2 then
-				UDRNumber = 1 - UDRNumber
-				for i = 0, UDRNumber, 1 do
-					pPlayer:GetUnits():Create(GameInfo.Units["UNIT_UNDEAD_RANGE"].Index, capitalCity:GetX(), capitalCity:GetY());
 				end
 			end
 		end
