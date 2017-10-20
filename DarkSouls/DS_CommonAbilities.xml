@@ -123,7 +123,7 @@
 		<Row>
 			<ModifierId>UNDEAD_MELEE_DECOMBAT_BONUS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>UNIT_UNDEAD_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>UNIT_UNDEAD_MIMIC_ATTCHED_REQUIREMENTS</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>UNDEAD_MELEE_DECOMBAT_BONUS_MODIFIER</ModifierId>

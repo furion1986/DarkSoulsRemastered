@@ -320,10 +320,10 @@
 			<Text>攻击受伤单位时 +{1_Amount} [ICON_Ranged] 战斗力。</Text>
 		</Replace>
 		<Replace Tag="LOC_DECOMBAT_BONUS_BONUS" Language="zh_Hans_CN">
-			<Text>弓系武器防御 {1_Amount} [ICON_Ranged] 战斗力。</Text>
+			<Text>弓系武器防御时 {1_Amount} 战斗力。</Text>
 		</Replace>
 		<Replace Tag="LOC_MELEE_DECOMBAT_BONUS_BONUS" Language="zh_Hans_CN">
-			<Text>弓系武器发起近战 {1_Amount} [ICON_Ranged] 战斗力。</Text>
+			<Text>弓系武器发起近战 {1_Amount} 战斗力。</Text>
 		</Replace>
 		<!--Support_Equipments-->
 		<Replace Tag="LOC_UNIT_SMALL_SHIELD_NAME" Language="zh_Hans_CN">

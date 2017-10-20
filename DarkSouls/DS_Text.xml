@@ -245,7 +245,7 @@
 		<Row Tag="LOC_UNIT_SHORT_BOW_DESCRIPTION">
 			<Text>
 				15 [ICON_Strength] Combat Strength Range Weapon, +1 [ICON_Range] Range.
-				[NEWLINE]
+				[NEWLINE]Bow Weapon -20 Combat Strength when defending, -30 Combat Strength when using MELEE ATTACK.
 				[NEWLINE][NEWLINE]Small bow. Standard projectile weapon. Range Undeads need Equip to use.
 			</Text>
 		</Row>
@@ -255,6 +255,7 @@
 		<Row Tag="LOC_UNIT_COMPOSITE_BOW_DESCRIPTION">
 			<Text>
 				30 [ICON_Strength] Combat Strength Range Weapon, +1 [ICON_Range] Range.
+				[NEWLINE]Bow Weapon -20 Combat Strength when defending, -30 Combat Strength when using MELEE ATTACK.
 				[NEWLINE][NEWLINE]Bow born from the soul of the Dark Sun Gwyndolin, Darkmoon deity who watches over the abandoned city of Gods, Anor Londo.
 				[NEWLINE]This golden bow is imbued with powerful magic and is most impressive with Moonlight Arrows.
 			</Text>
@@ -265,6 +266,7 @@
 		<Row Tag="LOC_UNIT_DRAGONSLAYER_GREATBOW_DESCRIPTION">
 			<Text>
 				50 [ICON_Strength] Combat Strength Range Weapon, +2 [ICON_Range] Range.
+				[NEWLINE]Bow Weapon -20 Combat Strength when defending, -30 Combat Strength when using MELEE ATTACK.
 				[NEWLINE][NEWLINE]Bow of the Dragonslayers, led by Hawkeye Gough, one of Gwyn's Four Knights.
 			</Text>
 		</Row>
@@ -274,6 +276,7 @@
 		<Row Tag="LOC_UNIT_GOUGHS_GREATBOW_DESCRIPTION">
 			<Text>
 				70 [ICON_Strength] Combat Strength Range Weapon, +5 [ICON_Range] Range. +20 [ICON_Ranged] Ranged Strength when attacking.
+				[NEWLINE]Bow Weapon -20 Combat Strength when defending, -30 Combat Strength when using MELEE ATTACK.
 				[NEWLINE][NEWLINE]Greatbow used by Hawkeye Gough, of Lord Gwyn's Four Knights, for dragon slaying.
 				[NEWLINE]This bow is larger than even those used by the famed Dragonslayers. Only their leader, Gough, had the strength to handle it.
 			</Text>
@@ -312,6 +315,12 @@
 		</Row>
 		<Row Tag="LOC_SILVER_TRACER_ATTACK_VS_WOUNDER_DESCRIPTION">
 			<Text>+{1_Amount} [ICON_Ranged] Range Strength against damaged units.</Text>
+		</Row>
+		<Row Tag="LOC_DECOMBAT_BONUS_BONUS">
+			<Text>Bow weapon {1_Amount} Combat Strength when defending.</Text>
+		</Row>
+		<Row Tag="LOC_MELEE_DECOMBAT_BONUS_BONUS">
+			<Text>Range unit {1_Amount} Combat Strength when attacking as melee type.</Text>
 		</Row>
 		<!--Support_Equipments-->
 		<Row Tag="LOC_UNIT_SMALL_SHIELD_NAME">
