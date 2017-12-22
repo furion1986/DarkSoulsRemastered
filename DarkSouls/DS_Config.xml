@@ -20,6 +20,7 @@
 	</Players>
 	<PlayerItems>
 		<Row>
+			<Domain>StandardPlayers</Domain>
 			<CivilizationType>CIVILIZATION_FIRELINK</CivilizationType>
 			<LeaderType>LEADER_FIREKEEPER</LeaderType>
 			<Type>DISTRICT_BONFIRE</Type>
@@ -29,6 +30,7 @@
 			<SortIndex>20</SortIndex>
 		</Row>
 		<Row>
+			<Domain>StandardPlayers</Domain>
 			<CivilizationType>CIVILIZATION_FIRELINK</CivilizationType>
 			<LeaderType>LEADER_FIREKEEPER</LeaderType>
 			<Type>UNIT_UNDEAD</Type>

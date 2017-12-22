@@ -325,6 +325,9 @@
 		<Replace Tag="LOC_MELEE_DECOMBAT_BONUS_BONUS" Language="zh_Hans_CN">
 			<Text>弓系武器发起近战 {1_Amount} 战斗力。</Text>
 		</Replace>
+		<Replace Tag="LOC_MIMIC_MELEE_DECOMBAT_BONUS" Language="zh_Hans_CN">
+			<Text>宝箱怪发起近战 {1_Amount} 战斗力。</Text>
+		</Replace>
 		<!--Support_Equipments-->
 		<Replace Tag="LOC_UNIT_SMALL_SHIELD_NAME" Language="zh_Hans_CN">
 			<Text>小盾</Text>

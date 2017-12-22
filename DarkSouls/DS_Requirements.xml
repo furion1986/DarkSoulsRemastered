@@ -40,10 +40,6 @@
 			<RequirementSetId>PLOT_HAS_BONFIRE_DISTRICT</RequirementSetId>
 			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
 		</Row>
-		<Row>
-			<RequirementSetId>UNIT_UNDEAD_MIMIC_ATTCHED_REQUIREMENTS</RequirementSetId>
-			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
-		</Row>
 	</RequirementSets>
 	<RequirementSetRequirements>
 		<Row>
@@ -106,14 +102,6 @@
 			<RequirementSetId>PLOT_HAS_BONFIRE_DISTRICT</RequirementSetId>
 			<RequirementId>REQUIRES_PLOT_HAS_BONFIRE_DISTRICT</RequirementId>
 		</Row>
-		<Row>
-			<RequirementSetId>UNIT_UNDEAD_MIMIC_ATTCHED_REQUIREMENTS</RequirementSetId>
-			<RequirementId>UNIT_UNDEAD_ATTCHED_ADJACENCY</RequirementId>
-		</Row>
-		<Row>
-			<RequirementSetId>UNIT_UNDEAD_MIMIC_ATTCHED_REQUIREMENTS</RequirementSetId>
-			<RequirementId>UNIT_UNDEAD_MIMIC_ATTCHED_REQUIREMENTS_MET_REQUIREMENT</RequirementId>
-		</Row>
 	</RequirementSetRequirements>
 	<Requirements>
 		<Row>
@@ -147,10 +135,6 @@
 		<Row>
 			<RequirementId>REQUIRES_PLOT_HAS_BONFIRE_DISTRICT</RequirementId>
 			<RequirementType>REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES</RequirementType>
-		</Row>
-		<Row>
-			<RequirementId>UNIT_UNDEAD_MIMIC_ATTCHED_REQUIREMENTS_MET_REQUIREMENT</RequirementId>
-			<RequirementType>REQUIREMENT_REQUIREMENTSET_IS_MET</RequirementType>
 		</Row>
 	</Requirements>
 	<RequirementArguments>
@@ -203,11 +187,6 @@
 			<RequirementId>REQUIRES_PLOT_HAS_BONFIRE_DISTRICT</RequirementId>
 			<Name>DistrictType</Name>
 			<Value>DISTRICT_BONFIRE</Value>
-		</Row>
-		<Row>
-			<RequirementId>UNIT_UNDEAD_MIMIC_ATTCHED_REQUIREMENTS_MET_REQUIREMENT</RequirementId>
-			<Name>RequirementSetId</Name>
-			<Value>UNIT_UNDEAD_ITEM_ATTCHED_REQUIREMENTS</Value>
 		</Row>
 	</RequirementArguments>
 </GameData>

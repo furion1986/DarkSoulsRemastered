@@ -3,9 +3,13 @@ XLP cook starting...
 C:\Users\Administrator\Documents\Firaxis ModBuddy\Civilization VI\DarkSoulsRemastered\DarkSouls\XLPs\Units.xlp
 Opened output file: C:\Users\Administrator\Documents\My Games\Sid Meier's Civilization VI\Mods\DarkSouls\Platforms\MacOS\BLPs/units/units.blp    For XLP: 'C:\Users\Administrator\Documents\Firaxis ModBuddy\Civilization VI\DarkSoulsRemastered\DarkSouls\XLPs\Units.xlp'
 Starting 'units/units'
-Load finished for: 'units/units' in 0.541 seconds
-Cook finished for: 'units/units' in 0.007 seconds
-Disk write finished for: 'units/units' in 0.224 seconds
-Cleanup finished for: 'units/units' in 0.013 seconds
+
+****** Log from Geo:       'Lothric_KnightArmorA' ********
+--------------
+ LothricKnight_Armor#M has 4 unused vertices
+Load finished for: 'units/units' in 0.400 seconds
+Cook finished for: 'units/units' in 0.002 seconds
+Disk write finished for: 'units/units' in 0.590 seconds
+Cleanup finished for: 'units/units' in 0.010 seconds
 XLP cook completed with success.
-Cook completed in 1.000 seconds
+Cook completed in 1.159 seconds

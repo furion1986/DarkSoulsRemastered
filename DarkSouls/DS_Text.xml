@@ -322,6 +322,9 @@
 		<Row Tag="LOC_MELEE_DECOMBAT_BONUS_BONUS">
 			<Text>Range unit {1_Amount} Combat Strength when attacking as melee type.</Text>
 		</Row>
+		<Row Tag="LOC_MIMIC_MELEE_DECOMBAT_BONUS">
+			<Text>Mimic {1_Amount} Combat Strength when attacking as melee type.</Text>
+		</Row>
 		<!--Support_Equipments-->
 		<Row Tag="LOC_UNIT_SMALL_SHIELD_NAME">
 			<Text>Small Shield</Text>
