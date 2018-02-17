@@ -133,8 +133,8 @@
 		<Row AgendaOne="AGENDA_THE_FIRE_KEEPER" AgendaTwo="AGENDA_NUKE_LOVER"/>
 	</ExclusiveAgendas>
 	<TraitModifiers>
-		<Row TraitType="TRAIT_AGENDA_THE_FIRE_KEEPER" ModifierId="AGENDA_EXPLORER"/>
-		<Row TraitType="TRAIT_AGENDA_THE_FIRE_KEEPER" ModifierId="AGENDA_NATURALIST"/>
+		<Row TraitType="TRAIT_AGENDA_THE_FIRE_KEEPER" ModifierId="AGENDA_HIGH_EXPLORATION"/>
+		<Row TraitType="TRAIT_AGENDA_THE_FIRE_KEEPER" ModifierId="AGENDA_LOW_FAITH"/>
 	</TraitModifiers>
 
 	<!-- Ai Info -->
