@@ -1,15 +1,15 @@
 Starting AssetCooker...
 XLP cook starting...
-C:\Users\Administrator\Documents\Firaxis ModBuddy\Civilization VI\DarkSoulsRemastered\DarkSouls\XLPs\Units.xlp
-Opened output file: C:\Users\Administrator\Documents\My Games\Sid Meier's Civilization VI\Mods\DarkSouls\Platforms\MacOS\BLPs/units/units.blp    For XLP: 'C:\Users\Administrator\Documents\Firaxis ModBuddy\Civilization VI\DarkSoulsRemastered\DarkSouls\XLPs\Units.xlp'
+C:\Users\Furion\Documents\Firaxis ModBuddy\Civilization VI\DarkSoulsRemastered\DarkSouls\XLPs\Units.xlp
+Opened output file: C:\Users\Furion\Documents\My Games\Sid Meier's Civilization VI\Mods\DarkSouls\Platforms\MacOS\BLPs/units/units.blp    For XLP: 'C:\Users\Furion\Documents\Firaxis ModBuddy\Civilization VI\DarkSoulsRemastered\DarkSouls\XLPs\Units.xlp'
 Starting 'units/units'
 
 ****** Log from Geo:       'Lothric_KnightArmorA' ********
 --------------
  LothricKnight_Armor#M has 4 unused vertices
-Load finished for: 'units/units' in 3.272 seconds
+Load finished for: 'units/units' in 0.444 seconds
 Cook finished for: 'units/units' in 0.002 seconds
-Disk write finished for: 'units/units' in 0.103 seconds
-Cleanup finished for: 'units/units' in 0.011 seconds
+Disk write finished for: 'units/units' in 0.394 seconds
+Cleanup finished for: 'units/units' in 0.015 seconds
 XLP cook completed with success.
-Cook completed in 3.571 seconds
+Cook completed in 1.058 seconds
